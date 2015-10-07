@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">/* System headers. */</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/* SphinxBase headers. */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/ckd_alloc.h&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html">sphinxbase/ckd_alloc.h</a>&gt;</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/* Local headers. */</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ps__alignment_8h.html">ps_alignment.h</a>&quot;</span></div>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="structps__alignment__s.html">ps_alignment_t</a> *</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="ps__alignment_8h.html#abe7668d9a53be1401896623ed42f02be">   51</a></span>&#160;<a class="code" href="ps__alignment_8c.html#abe7668d9a53be1401896623ed42f02be">ps_alignment_init</a>(<a class="code" href="structdict2pid__t.html">dict2pid_t</a> *d2p)</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="structps__alignment__s.html">ps_alignment_t</a> *al = ckd_calloc(1, <span class="keyword">sizeof</span>(*al));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="structps__alignment__s.html">ps_alignment_t</a> *al = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(*al));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    al-&gt;d2p = <a class="code" href="dict2pid_8c.html#a85a8de8009445e1129766186ddaa949a">dict2pid_retain</a>(d2p);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> al;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
@@ -126,10 +126,10 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (al == NULL)</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="dict2pid_8c.html#a293253226550e812c448ae096b364d0d">dict2pid_free</a>(al-&gt;d2p);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ckd_free(al-&gt;word.seq);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ckd_free(al-&gt;sseq.seq);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ckd_free(al-&gt;state.seq);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ckd_free(al);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(al-&gt;word.seq);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(al-&gt;sseq.seq);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(al-&gt;state.seq);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(al);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    newsize += VECTOR_GROW;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (newsize &gt; 0xffff)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ptr = ckd_realloc(ptr, newsize * item_size);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ptr = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#afd496738b3e114bd494c5a0955f1bfb3">ckd_realloc</a>(ptr, newsize * item_size);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    *n += 1;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    *n_alloc = newsize;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> ptr;</div>
@@ -220,7 +220,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="comment">/* First phone. */</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span> ((sent = ps_alignment_vector_grow_one(&amp;al-&gt;sseq)) == NULL) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            E_ERROR(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a>(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        sent-&gt;id.pid.cipid = dict_first_phone(dict, wid);</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">/* Internal phones. */</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">for</span> (j = 1; j &lt; len - 1; ++j) {</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">if</span> ((sent = ps_alignment_vector_grow_one(&amp;al-&gt;sseq)) == NULL) {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                E_ERROR(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a>(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            sent-&gt;id.pid.cipid = <a class="code" href="dict_8h.html#a8785ab6264a5c6cf0b8da6bf79a46de4">dict_pron</a>(dict, wid, j);</div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="structxwdssid__t.html">xwdssid_t</a> *rssid;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            assert(j == len - 1);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">if</span> ((sent = ps_alignment_vector_grow_one(&amp;al-&gt;sseq)) == NULL) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                E_ERROR(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a>(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            }</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            sent-&gt;id.pid.cipid = dict_last_phone(dict, wid);</div>
@@ -286,7 +286,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; bin_mdef_n_emit_state(mdef); ++j) {</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">if</span> ((sent = ps_alignment_vector_grow_one(&amp;al-&gt;state)) == NULL) {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                E_ERROR(<span class="stringliteral">&quot;Failed to add state entry!\n&quot;</span>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a>(<span class="stringliteral">&quot;Failed to add state entry!\n&quot;</span>);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            sent-&gt;id.senid = bin_mdef_sseq2sen(mdef, pent-&gt;id.pid.ssid, j);</div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; len; ++j) {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">if</span> ((sent = ps_alignment_vector_grow_one(&amp;al-&gt;sseq)) == NULL) {</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                E_ERROR(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a>(<span class="stringliteral">&quot;Failed to add phone entry!\n&quot;</span>);</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            }</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            sent-&gt;id.pid.cipid = <a class="code" href="dict_8h.html#a8785ab6264a5c6cf0b8da6bf79a46de4">dict_pron</a>(dict, wid, j);</div>
@@ -351,7 +351,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; bin_mdef_n_emit_state(mdef); ++j) {</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">if</span> ((sent = ps_alignment_vector_grow_one(&amp;al-&gt;state)) == NULL) {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                E_ERROR(<span class="stringliteral">&quot;Failed to add state entry!\n&quot;</span>);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a>(<span class="stringliteral">&quot;Failed to add state entry!\n&quot;</span>);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            }</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            sent-&gt;id.senid = bin_mdef_sseq2sen(mdef, pent-&gt;id.pid.ssid, j);</div>
@@ -426,7 +426,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">if</span> (al-&gt;word.n_ent == 0)</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    itor = ckd_calloc(1, <span class="keyword">sizeof</span>(*itor));</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    itor = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(*itor));</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    itor-&gt;al = al;</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    itor-&gt;vec = &amp;al-&gt;word;</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    itor-&gt;pos = 0;</div>
@@ -440,7 +440,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">if</span> (al-&gt;sseq.n_ent == 0)</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    itor = ckd_calloc(1, <span class="keyword">sizeof</span>(*itor));</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    itor = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(*itor));</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    itor-&gt;al = al;</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    itor-&gt;vec = &amp;al-&gt;sseq;</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    itor-&gt;pos = 0;</div>
@@ -454,7 +454,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordflow">if</span> (al-&gt;state.n_ent == 0)</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    itor = ckd_calloc(1, <span class="keyword">sizeof</span>(*itor));</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    itor = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(*itor));</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    itor-&gt;al = al;</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    itor-&gt;vec = &amp;al-&gt;state;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    itor-&gt;pos = 0;</div>
@@ -470,7 +470,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="keywordtype">int</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="ps__alignment_8h.html#a80e0020539ea622706bf63883e24d301">  406</a></span>&#160;<a class="code" href="ps__alignment_8c.html#a80e0020539ea622706bf63883e24d301">ps_alignment_iter_free</a>(<a class="code" href="structps__alignment__iter__s.html">ps_alignment_iter_t</a> *itor)</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;{</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    ckd_free(itor);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(itor);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;}</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
@@ -521,7 +521,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordflow">if</span> (itor-&gt;vec-&gt;seq[itor-&gt;pos].parent == PS_ALIGNMENT_NONE)</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    itor2 = ckd_calloc(1, <span class="keyword">sizeof</span>(*itor2));</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;    itor2 = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(*itor2));</div>
 <div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;    itor2-&gt;al = itor-&gt;al;</div>
 <div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    itor2-&gt;pos = itor-&gt;vec-&gt;seq[itor-&gt;pos].parent;</div>
 <div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;    <span class="keywordflow">if</span> (itor-&gt;vec == &amp;itor-&gt;al-&gt;sseq)</div>
@@ -541,7 +541,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <span class="keywordflow">if</span> (itor-&gt;vec-&gt;seq[itor-&gt;pos].child == PS_ALIGNMENT_NONE)</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    itor2 = ckd_calloc(1, <span class="keyword">sizeof</span>(*itor2));</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;    itor2 = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(*itor2));</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    itor2-&gt;al = itor-&gt;al;</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;    itor2-&gt;pos = itor-&gt;vec-&gt;seq[itor-&gt;pos].child;</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;    <span class="keywordflow">if</span> (itor-&gt;vec == &amp;itor-&gt;al-&gt;word)</div>
@@ -553,7 +553,9 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="ttc" id="ps__alignment_8c_html_acfed230b07c1e09fae89eeb74c468460"><div class="ttname"><a href="ps__alignment_8c.html#acfed230b07c1e09fae89eeb74c468460">ps_alignment_n_states</a></div><div class="ttdeci">int ps_alignment_n_states(ps_alignment_t *al)</div><div class="ttdoc">Number of states. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00352">ps_alignment.c:352</a></div></div>
 <div class="ttc" id="structps__alignment__entry__s_html"><div class="ttname"><a href="structps__alignment__entry__s.html">ps_alignment_entry_s</a></div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8h_source.html#l00056">ps_alignment.h:56</a></div></div>
 <div class="ttc" id="structps__alignment__iter__s_html"><div class="ttname"><a href="structps__alignment__iter__s.html">ps_alignment_iter_s</a></div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8h_source.html#l00087">ps_alignment.h:87</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_aa00ef21903bc4f8a972488417adc8d2e"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a></div><div class="ttdeci">#define ckd_calloc(n, sz)</div></div>
 <div class="ttc" id="ps__alignment_8c_html_ae17f691c36070955e32a2c987910acde"><div class="ttname"><a href="ps__alignment_8c.html#ae17f691c36070955e32a2c987910acde">ps_alignment_populate_ci</a></div><div class="ttdeci">int ps_alignment_populate_ci(ps_alignment_t *al)</div><div class="ttdoc">Populate lower layers using context-independent phones. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00242">ps_alignment.c:242</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html">ckd_alloc.h</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_abe7668d9a53be1401896623ed42f02be"><div class="ttname"><a href="ps__alignment_8c.html#abe7668d9a53be1401896623ed42f02be">ps_alignment_init</a></div><div class="ttdeci">ps_alignment_t * ps_alignment_init(dict2pid_t *d2p)</div><div class="ttdoc">Create a new, empty alignment. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00051">ps_alignment.c:51</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_a7cec3eabbedf8d94295d98541bbbaa10"><div class="ttname"><a href="ps__alignment_8c.html#a7cec3eabbedf8d94295d98541bbbaa10">ps_alignment_iter_goto</a></div><div class="ttdeci">ps_alignment_iter_t * ps_alignment_iter_goto(ps_alignment_iter_t *itor, int pos)</div><div class="ttdoc">Move alignment iterator to given index. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00413">ps_alignment.c:413</a></div></div>
 <div class="ttc" id="bin__mdef_8h_html_a8ee283c316e9f4aa8e6d18c1d44026bc"><div class="ttname"><a href="bin__mdef_8h.html#a8ee283c316e9f4aa8e6d18c1d44026bc">BAD_SSID</a></div><div class="ttdeci">#define BAD_SSID</div><div class="ttdoc">Invalid senone sequence ID (limited to 16 bits for PocketSphinx). </div><div class="ttdef"><b>Definition:</b> <a href="bin__mdef_8h_source.html#l00097">bin_mdef.h:97</a></div></div>
@@ -561,6 +563,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="ttc" id="dict2pid_8c_html_a293253226550e812c448ae096b364d0d"><div class="ttname"><a href="dict2pid_8c.html#a293253226550e812c448ae096b364d0d">dict2pid_free</a></div><div class="ttdeci">int dict2pid_free(dict2pid_t *d2p)</div><div class="ttdoc">Free the memory dict2pid structure. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8c_source.html#l00507">dict2pid.c:507</a></div></div>
 <div class="ttc" id="structps__alignment__s_html"><div class="ttname"><a href="structps__alignment__s.html">ps_alignment_s</a></div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8h_source.html#l00079">ps_alignment.h:79</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_ab8fa505f155e38d7e6f8b7dbbd070282"><div class="ttname"><a href="ps__alignment_8c.html#ab8fa505f155e38d7e6f8b7dbbd070282">ps_alignment_free</a></div><div class="ttdeci">int ps_alignment_free(ps_alignment_t *al)</div><div class="ttdoc">Release an alignment. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00059">ps_alignment.c:59</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_a31c6b405558620ac37599737b5722fbf"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a></div><div class="ttdeci">SPHINXBASE_EXPORT void ckd_free(void *ptr)</div></div>
 <div class="ttc" id="structbin__mdef__s_html"><div class="ttname"><a href="structbin__mdef__s.html">bin_mdef_s</a></div><div class="ttdef"><b>Definition:</b> <a href="bin__mdef_8h_source.html#l00120">bin_mdef.h:120</a></div></div>
 <div class="ttc" id="dict2pid_8h_html_a453a98931cad95a19b4c4ab770fc79f1"><div class="ttname"><a href="dict2pid_8h.html#a453a98931cad95a19b4c4ab770fc79f1">dict2pid_rssid</a></div><div class="ttdeci">#define dict2pid_rssid(d, ci, lc)</div><div class="ttdoc">Access macros; not designed for arbitrary use. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8h_source.html#l00179">dict2pid.h:179</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_adc8ea5411f8500a0affcec636d65fa8d"><div class="ttname"><a href="ps__alignment_8c.html#adc8ea5411f8500a0affcec636d65fa8d">ps_alignment_propagate</a></div><div class="ttdeci">int ps_alignment_propagate(ps_alignment_t *al)</div><div class="ttdoc">Propagate timing information up from state sequence. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00306">ps_alignment.c:306</a></div></div>
@@ -573,12 +576,14 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div class="ttc" id="dict2pid_8c_html_a720e15c92ef6930e722bccb014e11b7b"><div class="ttname"><a href="dict2pid_8c.html#a720e15c92ef6930e722bccb014e11b7b">dict2pid_internal</a></div><div class="ttdeci">s3ssid_t dict2pid_internal(dict2pid_t *d2p, int32 wid, int pos)</div><div class="ttdoc">Return the senone sequence ID for the given word position. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8c_source.html#l00367">dict2pid.c:367</a></div></div>
 <div class="ttc" id="structxwdssid__t_html"><div class="ttname"><a href="structxwdssid__t.html">xwdssid_t</a></div><div class="ttdoc">cross word triphone model structure </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8h_source.html#l00137">dict2pid.h:137</a></div></div>
 <div class="ttc" id="dict2pid_8c_html_a85a8de8009445e1129766186ddaa949a"><div class="ttname"><a href="dict2pid_8c.html#a85a8de8009445e1129766186ddaa949a">dict2pid_retain</a></div><div class="ttdeci">dict2pid_t * dict2pid_retain(dict2pid_t *d2p)</div><div class="ttdoc">Retain a pointer to dict2pid. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8c_source.html#l00500">dict2pid.c:500</a></div></div>
+<div class="ttc" id="err_8h_html_a5f7b2f58f5a663a6bdd51f197ae21993"><div class="ttname"><a href="../sphinxbase/err_8h.html#a5f7b2f58f5a663a6bdd51f197ae21993">E_ERROR</a></div><div class="ttdeci">#define E_ERROR</div></div>
 <div class="ttc" id="ps__alignment_8c_html_a75e333f3b8a0d14b29d4853a7245b0f9"><div class="ttname"><a href="ps__alignment_8c.html#a75e333f3b8a0d14b29d4853a7245b0f9">ps_alignment_iter_prev</a></div><div class="ttdeci">ps_alignment_iter_t * ps_alignment_iter_prev(ps_alignment_iter_t *itor)</div><div class="ttdoc">Move an alignment iterator back. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00438">ps_alignment.c:438</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_a8c6ba334f7dcf512f8485ca7a0b2d2c0"><div class="ttname"><a href="ps__alignment_8c.html#a8c6ba334f7dcf512f8485ca7a0b2d2c0">ps_alignment_states</a></div><div class="ttdeci">ps_alignment_iter_t * ps_alignment_states(ps_alignment_t *al)</div><div class="ttdoc">Iterate over the alignment starting at the first state. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00386">ps_alignment.c:386</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_ae546c5daf7bc78fe2924200b99187aa0"><div class="ttname"><a href="ps__alignment_8c.html#ae546c5daf7bc78fe2924200b99187aa0">ps_alignment_iter_up</a></div><div class="ttdeci">ps_alignment_iter_t * ps_alignment_iter_up(ps_alignment_iter_t *itor)</div><div class="ttdoc">Get a new iterator starting at the parent of the current node. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00450">ps_alignment.c:450</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_a6356f643a01e2071c6f00f8a5d56565a"><div class="ttname"><a href="ps__alignment_8c.html#a6356f643a01e2071c6f00f8a5d56565a">ps_alignment_iter_down</a></div><div class="ttdeci">ps_alignment_iter_t * ps_alignment_iter_down(ps_alignment_iter_t *itor)</div><div class="ttdoc">Get a new iterator starting at the first child of the current node. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00470">ps_alignment.c:470</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_ab541dcf586611d20e84fd9ec562e7a52"><div class="ttname"><a href="ps__alignment_8c.html#ab541dcf586611d20e84fd9ec562e7a52">ps_alignment_n_phones</a></div><div class="ttdeci">int ps_alignment_n_phones(ps_alignment_t *al)</div><div class="ttdoc">Number of phones. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00346">ps_alignment.c:346</a></div></div>
 <div class="ttc" id="ps__alignment_8c_html_a80e0020539ea622706bf63883e24d301"><div class="ttname"><a href="ps__alignment_8c.html#a80e0020539ea622706bf63883e24d301">ps_alignment_iter_free</a></div><div class="ttdeci">int ps_alignment_iter_free(ps_alignment_iter_t *itor)</div><div class="ttdoc">Release an iterator before completing all iterations. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00406">ps_alignment.c:406</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_afd496738b3e114bd494c5a0955f1bfb3"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#afd496738b3e114bd494c5a0955f1bfb3">ckd_realloc</a></div><div class="ttdeci">#define ckd_realloc(ptr, sz)</div></div>
 <div class="ttc" id="structxwdssid__t_html_a502f9241a70383aa260d3390e4ff58fb"><div class="ttname"><a href="structxwdssid__t.html#a502f9241a70383aa260d3390e4ff58fb">xwdssid_t::cimap</a></div><div class="ttdeci">s3cipid_t * cimap</div><div class="ttdoc">Index into ssid[] above for each ci phone. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8h_source.html#l00139">dict2pid.h:139</a></div></div>
 <div class="ttc" id="ps__alignment_8h_html"><div class="ttname"><a href="ps__alignment_8h.html">ps_alignment.h</a></div><div class="ttdoc">Multi-level alignment structure. </div></div>
 <div class="ttc" id="ps__alignment_8c_html_a59e81853dad3d935755dcb309d8cc926"><div class="ttname"><a href="ps__alignment_8c.html#a59e81853dad3d935755dcb309d8cc926">ps_alignment_populate</a></div><div class="ttdeci">int ps_alignment_populate(ps_alignment_t *al)</div><div class="ttdoc">Populate lower layers using available word information. </div><div class="ttdef"><b>Definition:</b> <a href="ps__alignment_8c_source.html#l00128">ps_alignment.c:128</a></div></div>
@@ -595,7 +600,7 @@ $(document).ready(function(){initNavTree('ps__alignment_8c_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="ps__alignment_8c.html">ps_alignment.c</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:33 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

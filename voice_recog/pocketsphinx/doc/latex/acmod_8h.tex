@@ -45,7 +45,7 @@ struct {\bf acmod\-\_\-s}
 \#define {\bfseries ps\-\_\-mgau\-\_\-free}(mg)~($\ast$ps\-\_\-mgau\-\_\-base(mg)-\/$>$vt-\/$>$free)(mg)\label{acmod_8h_ab881e220edd9749efd928b4f3c439a1e}
 
 \item 
-\#define {\bf acmod\-\_\-activate\-\_\-sen}(acmod, sen)~bitvec\-\_\-set((acmod)-\/$>$senone\-\_\-active\-\_\-vec, sen)\label{acmod_8h_a2ad4e2308e0e87230833466844bbccbc}
+\#define {\bf acmod\-\_\-activate\-\_\-sen}(acmod, sen)~{\bf bitvec\-\_\-set}((acmod)-\/$>$senone\-\_\-active\-\_\-vec, sen)\label{acmod_8h_a2ad4e2308e0e87230833466844bbccbc}
 
 \begin{DoxyCompactList}\small\item\em Activate a single senone. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
@@ -75,7 +75,7 @@ enum {\bf acmod\-\_\-state\-\_\-e} \{ {\bf A\-C\-M\-O\-D\-\_\-\-I\-D\-L\-E},
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf acmod\-\_\-t} $\ast$ {\bf acmod\-\_\-init} (cmd\-\_\-ln\-\_\-t $\ast$config, logmath\-\_\-t $\ast$lmath, fe\-\_\-t $\ast$fe, feat\-\_\-t $\ast$fcb)
+{\bf acmod\-\_\-t} $\ast$ {\bf acmod\-\_\-init} ({\bf cmd\-\_\-ln\-\_\-t} $\ast$config, {\bf logmath\-\_\-t} $\ast$lmath, fe\-\_\-t $\ast$fe, {\bf feat\-\_\-t} $\ast$fcb)
 \begin{DoxyCompactList}\small\item\em Initialize an acoustic model. \end{DoxyCompactList}\item 
 {\bf ps\-\_\-mllr\-\_\-t} $\ast$ {\bf acmod\-\_\-update\-\_\-mllr} ({\bf acmod\-\_\-t} $\ast$acmod, {\bf ps\-\_\-mllr\-\_\-t} $\ast$mllr)
 \begin{DoxyCompactList}\small\item\em Adapt acoustic model using a linear transform. \end{DoxyCompactList}\item 
@@ -253,10 +253,10 @@ References acmod\-\_\-s\-::feat\-\_\-buf.
 \index{acmod\-\_\-init@{acmod\-\_\-init}!acmod.h@{acmod.\-h}}
 \subsubsection[{acmod\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf acmod\-\_\-t}$\ast$ acmod\-\_\-init (
 \begin{DoxyParamCaption}
-\item[{cmd\-\_\-ln\-\_\-t $\ast$}]{config, }
-\item[{logmath\-\_\-t $\ast$}]{lmath, }
+\item[{{\bf cmd\-\_\-ln\-\_\-t} $\ast$}]{config, }
+\item[{{\bf logmath\-\_\-t} $\ast$}]{lmath, }
 \item[{fe\-\_\-t $\ast$}]{fe, }
-\item[{feat\-\_\-t $\ast$}]{fcb}
+\item[{{\bf feat\-\_\-t} $\ast$}]{fcb}
 \end{DoxyParamCaption}
 )}\label{acmod_8h_a6f32b623cbc3d15a1e3c5d09aba7dabf}
 
@@ -283,7 +283,7 @@ Definition at line 233 of file acmod.\-c.
 
 
 
-References acmod\-\_\-free(), A\-C\-M\-O\-D\-\_\-\-I\-D\-L\-E, acmod\-\_\-s\-::compallsen, acmod\-\_\-s\-::config, acmod\-\_\-s\-::fcb, acmod\-\_\-s\-::fe, acmod\-\_\-s\-::feat\-\_\-buf, acmod\-\_\-s\-::framepos, acmod\-\_\-s\-::lmath, acmod\-\_\-s\-::log\-\_\-zero, acmod\-\_\-s\-::mdef, acmod\-\_\-s\-::mfc\-\_\-buf, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-mfc\-\_\-alloc, acmod\-\_\-s\-::senone\-\_\-active, acmod\-\_\-s\-::senone\-\_\-active\-\_\-vec, acmod\-\_\-s\-::senone\-\_\-scores, and acmod\-\_\-s\-::state.
+References acmod\-\_\-free(), A\-C\-M\-O\-D\-\_\-\-I\-D\-L\-E, bitvec\-\_\-alloc, ckd\-\_\-calloc, ckd\-\_\-calloc\-\_\-2d, cmd\-\_\-ln\-\_\-boolean\-\_\-r, cmd\-\_\-ln\-\_\-parse\-\_\-file\-\_\-r(), cmd\-\_\-ln\-\_\-retain(), cmd\-\_\-ln\-\_\-str\-\_\-r(), acmod\-\_\-s\-::compallsen, acmod\-\_\-s\-::config, E\-\_\-\-I\-N\-F\-O, acmod\-\_\-s\-::fcb, acmod\-\_\-s\-::fe, feat\-\_\-array\-\_\-alloc(), acmod\-\_\-s\-::feat\-\_\-buf, feat\-\_\-retain(), acmod\-\_\-s\-::framepos, acmod\-\_\-s\-::lmath, acmod\-\_\-s\-::log\-\_\-zero, logmath\-\_\-get\-\_\-zero(), acmod\-\_\-s\-::mdef, acmod\-\_\-s\-::mfc\-\_\-buf, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-mfc\-\_\-alloc, acmod\-\_\-s\-::senone\-\_\-active, acmod\-\_\-s\-::senone\-\_\-active\-\_\-vec, acmod\-\_\-s\-::senone\-\_\-scores, and acmod\-\_\-s\-::state.
 
 
 
@@ -321,7 +321,7 @@ Definition at line 692 of file acmod.\-c.
 
 
 
-References A\-C\-M\-O\-D\-\_\-\-E\-N\-D\-E\-D, A\-C\-M\-O\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G, A\-C\-M\-O\-D\-\_\-\-S\-T\-A\-R\-T\-E\-D, acmod\-\_\-s\-::fcb, acmod\-\_\-s\-::feat\-\_\-buf, acmod\-\_\-s\-::feat\-\_\-outidx, acmod\-\_\-s\-::grow\-\_\-feat, acmod\-\_\-s\-::mfcfh, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame, and acmod\-\_\-s\-::state.
+References A\-C\-M\-O\-D\-\_\-\-E\-N\-D\-E\-D, A\-C\-M\-O\-D\-\_\-\-P\-R\-O\-C\-E\-S\-S\-I\-N\-G, A\-C\-M\-O\-D\-\_\-\-S\-T\-A\-R\-T\-E\-D, acmod\-\_\-s\-::fcb, acmod\-\_\-s\-::feat\-\_\-buf, acmod\-\_\-s\-::feat\-\_\-outidx, feat\-\_\-s2mfc2feat\-\_\-live(), feat\-\_\-window\-\_\-size, acmod\-\_\-s\-::grow\-\_\-feat, acmod\-\_\-s\-::mfcfh, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame, and acmod\-\_\-s\-::state.
 
 \index{acmod.\-h@{acmod.\-h}!acmod\-\_\-process\-\_\-feat@{acmod\-\_\-process\-\_\-feat}}
 \index{acmod\-\_\-process\-\_\-feat@{acmod\-\_\-process\-\_\-feat}!acmod.h@{acmod.\-h}}
@@ -351,7 +351,7 @@ Definition at line 787 of file acmod.\-c.
 
 
 
-References acmod\-\_\-s\-::fcb, acmod\-\_\-s\-::feat\-\_\-buf, acmod\-\_\-s\-::feat\-\_\-outidx, acmod\-\_\-s\-::grow\-\_\-feat, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, and acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame.
+References acmod\-\_\-s\-::fcb, acmod\-\_\-s\-::feat\-\_\-buf, feat\-\_\-dimension1, feat\-\_\-dimension2, acmod\-\_\-s\-::feat\-\_\-outidx, acmod\-\_\-s\-::grow\-\_\-feat, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, and acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame.
 
 \index{acmod.\-h@{acmod.\-h}!acmod\-\_\-process\-\_\-raw@{acmod\-\_\-process\-\_\-raw}}
 \index{acmod\-\_\-process\-\_\-raw@{acmod\-\_\-process\-\_\-raw}!acmod.h@{acmod.\-h}}
@@ -413,7 +413,7 @@ Definition at line 997 of file acmod.\-c.
 
 
 
-References acmod\-\_\-s\-::feat\-\_\-outidx, acmod\-\_\-s\-::framepos, acmod\-\_\-s\-::grow\-\_\-feat, acmod\-\_\-s\-::insenfh, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame, acmod\-\_\-s\-::n\-\_\-senone\-\_\-active, acmod\-\_\-s\-::output\-\_\-frame, and acmod\-\_\-s\-::senscr\-\_\-frame.
+References E\-\_\-\-D\-E\-B\-U\-G, acmod\-\_\-s\-::feat\-\_\-outidx, acmod\-\_\-s\-::framepos, acmod\-\_\-s\-::grow\-\_\-feat, acmod\-\_\-s\-::insenfh, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame, acmod\-\_\-s\-::n\-\_\-senone\-\_\-active, acmod\-\_\-s\-::output\-\_\-frame, and acmod\-\_\-s\-::senscr\-\_\-frame.
 
 
 
@@ -441,7 +441,7 @@ Definition at line 864 of file acmod.\-c.
 
 
 
-References acmod\-\_\-s\-::feat\-\_\-outidx, ps\-\_\-mgau\-\_\-s\-::frame\-\_\-idx, acmod\-\_\-s\-::mgau, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame, acmod\-\_\-s\-::output\-\_\-frame, and acmod\-\_\-s\-::senscr\-\_\-frame.
+References E\-\_\-\-E\-R\-R\-O\-R, acmod\-\_\-s\-::feat\-\_\-outidx, ps\-\_\-mgau\-\_\-s\-::frame\-\_\-idx, acmod\-\_\-s\-::mgau, acmod\-\_\-s\-::n\-\_\-feat\-\_\-alloc, acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame, acmod\-\_\-s\-::output\-\_\-frame, and acmod\-\_\-s\-::senscr\-\_\-frame.
 
 \index{acmod.\-h@{acmod.\-h}!acmod\-\_\-score@{acmod\-\_\-score}}
 \index{acmod\-\_\-score@{acmod\-\_\-score}!acmod.h@{acmod.\-h}}
@@ -469,7 +469,7 @@ Definition at line 1088 of file acmod.\-c.
 
 
 
-References acmod\-\_\-flags2list(), acmod\-\_\-write\-\_\-scores(), acmod\-\_\-s\-::compallsen, acmod\-\_\-s\-::feat\-\_\-buf, acmod\-\_\-s\-::framepos, acmod\-\_\-s\-::insenfh, acmod\-\_\-s\-::mgau, acmod\-\_\-s\-::n\-\_\-senone\-\_\-active, acmod\-\_\-s\-::senfh, acmod\-\_\-s\-::senone\-\_\-active, acmod\-\_\-s\-::senone\-\_\-scores, and acmod\-\_\-s\-::senscr\-\_\-frame.
+References acmod\-\_\-flags2list(), acmod\-\_\-write\-\_\-scores(), acmod\-\_\-s\-::compallsen, E\-\_\-\-D\-E\-B\-U\-G, acmod\-\_\-s\-::feat\-\_\-buf, acmod\-\_\-s\-::framepos, acmod\-\_\-s\-::insenfh, acmod\-\_\-s\-::mgau, acmod\-\_\-s\-::n\-\_\-senone\-\_\-active, acmod\-\_\-s\-::senfh, acmod\-\_\-s\-::senone\-\_\-active, acmod\-\_\-s\-::senone\-\_\-scores, and acmod\-\_\-s\-::senscr\-\_\-frame.
 
 
 
@@ -533,7 +533,7 @@ Definition at line 851 of file acmod.\-c.
 
 
 
-References acmod\-\_\-s\-::compallsen, acmod\-\_\-s\-::config, acmod\-\_\-s\-::insenfh, and acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame.
+References cmd\-\_\-ln\-\_\-boolean\-\_\-r, acmod\-\_\-s\-::compallsen, acmod\-\_\-s\-::config, acmod\-\_\-s\-::insenfh, and acmod\-\_\-s\-::n\-\_\-feat\-\_\-frame.
 
 
 

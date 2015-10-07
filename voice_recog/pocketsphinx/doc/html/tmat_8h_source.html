@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('tmat_8h_source.html','');});
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/* SphinxBase headers. */</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/logmath.h&gt;</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html">sphinxbase/logmath.h</a>&gt;</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('tmat_8h_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="structtmat__t.html">tmat_t</a> *<a class="code" href="tmat_8h.html#a33fc2f994068e2667eb728d7118ea038">tmat_init</a> (<span class="keywordtype">char</span> <span class="keyword">const</span> *tmatfile,</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                   logmath_t *lmath,    </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                   <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structlogmath__s.html">logmath_t</a> *lmath,    </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                   float64 tpfloor,     </div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                   int32 breport      </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    );</div>
@@ -202,6 +202,7 @@ $(document).ready(function(){initNavTree('tmat_8h_source.html','');});
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structtmat__t_html_a9f518c96b30dab9efdb69bd779a7b5bf"><div class="ttname"><a href="structtmat__t.html#a9f518c96b30dab9efdb69bd779a7b5bf">tmat_t::tp</a></div><div class="ttdeci">uint8 *** tp</div><div class="ttdoc">The transition matrices; kept in the same scale as acoustic scores; tp[tmatid][from-state][to-state]...</div><div class="ttdef"><b>Definition:</b> <a href="tmat_8h_source.html#l00110">tmat.h:110</a></div></div>
+<div class="ttc" id="structlogmath__s_html"><div class="ttname"><a href="../sphinxbase/structlogmath__s.html">logmath_s</a></div></div>
 <div class="ttc" id="structtmat__t_html_ada644af34d54256f1574870d5f7a6788"><div class="ttname"><a href="structtmat__t.html#ada644af34d54256f1574870d5f7a6788">tmat_t::n_tmat</a></div><div class="ttdeci">int16 n_tmat</div><div class="ttdoc">Number matrices. </div><div class="ttdef"><b>Definition:</b> <a href="tmat_8h_source.html#l00112">tmat.h:112</a></div></div>
 <div class="ttc" id="tmat_8h_html_a8f98e68e4a868728a89cf9996c48a6c9"><div class="ttname"><a href="tmat_8h.html#a8f98e68e4a868728a89cf9996c48a6c9">tmat_free</a></div><div class="ttdeci">void tmat_free(tmat_t *t)</div><div class="ttdoc">RAH, add code to remove memory allocated by tmat_init. </div><div class="ttdef"><b>Definition:</b> <a href="tmat_8c_source.html#l00332">tmat.c:332</a></div></div>
 <div class="ttc" id="tmat_8h_html_a33fc2f994068e2667eb728d7118ea038"><div class="ttname"><a href="tmat_8h.html#a33fc2f994068e2667eb728d7118ea038">tmat_init</a></div><div class="ttdeci">tmat_t * tmat_init(char const *tmatfile, logmath_t *lmath, float64 tpfloor, int32 breport)</div><div class="ttdoc">Initialize transition matrix. </div><div class="ttdef"><b>Definition:</b> <a href="tmat_8c_source.html#l00191">tmat.c:191</a></div></div>
@@ -209,13 +210,14 @@ $(document).ready(function(){initNavTree('tmat_8h_source.html','');});
 <div class="ttc" id="tmat_8h_html_af222f1a75e4bbbc76e1141ef0d0e41c7"><div class="ttname"><a href="tmat_8h.html#af222f1a75e4bbbc76e1141ef0d0e41c7">tmat_dump</a></div><div class="ttdeci">void tmat_dump(tmat_t *tmat, FILE *fp)</div><div class="ttdoc">Dumping the transition matrix for debugging. </div><div class="ttdef"><b>Definition:</b> <a href="tmat_8c_source.html#l00129">tmat.c:129</a></div></div>
 <div class="ttc" id="structtmat__t_html"><div class="ttname"><a href="structtmat__t.html">tmat_t</a></div><div class="ttdoc">Transition matrix data structure. </div><div class="ttdef"><b>Definition:</b> <a href="tmat_8h_source.html#l00109">tmat.h:109</a></div></div>
 <div class="ttc" id="tmat_8h_html_a898dd73b6f40d9323f2d6e688733a0a5"><div class="ttname"><a href="tmat_8h.html#a898dd73b6f40d9323f2d6e688733a0a5">tmat_report</a></div><div class="ttdeci">void tmat_report(tmat_t *t)</div><div class="ttdoc">Report the detail of the transition matrix structure. </div><div class="ttdef"><b>Definition:</b> <a href="tmat_8c_source.html#l00319">tmat.c:319</a></div></div>
+<div class="ttc" id="logmath_8h_html"><div class="ttname"><a href="../sphinxbase/logmath_8h.html">logmath.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="tmat_8h.html">tmat.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:34 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

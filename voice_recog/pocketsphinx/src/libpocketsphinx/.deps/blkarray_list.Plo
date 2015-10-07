@@ -4,9 +4,9 @@ blkarray_list.lo: blkarray_list.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/local/include/sphinxbase/prim_type.h \
- /usr/local/include/sphinxbase/sphinx_config.h \
- /usr/local/include/sphinxbase/err.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
@@ -19,9 +19,9 @@ blkarray_list.lo: blkarray_list.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/local/include/sphinxbase/sphinxbase_export.h \
- /usr/local/include/sphinxbase/ckd_alloc.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -54,11 +54,11 @@ blkarray_list.lo: blkarray_list.c /usr/include/stdc-predef.h \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/local/include/sphinxbase/prim_type.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h:
 
-/usr/local/include/sphinxbase/sphinx_config.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h:
 
-/usr/local/include/sphinxbase/err.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
 
@@ -96,9 +96,9 @@ blkarray_list.lo: blkarray_list.c /usr/include/stdc-predef.h \
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/local/include/sphinxbase/sphinxbase_export.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/usr/local/include/sphinxbase/ckd_alloc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /usr/include/stdlib.h:
 

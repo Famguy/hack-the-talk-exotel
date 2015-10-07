@@ -17,7 +17,7 @@ old_library='libpocketsphinx.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/usr/local/lib /usr/local/lib/libsphinxad.la /usr/local/lib/libsphinxbase.la -lpulse -lpulse-simple -lpthread -lm -lblas -llapack'
+dependency_libs=' -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxad -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase/.libs /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase/libsphinxbase.la -lpulse -lpulse-simple -lpthread -lm -lblas -llapack'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -39,3 +39,4 @@ dlpreopen=''
 
 # Directory that this library needs to be installed in:
 libdir='/usr/local/lib'
+relink_command="(cd /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/src/libpocketsphinx; /bin/bash /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/libtool  --tag CC --mode=relink gcc -g -O2 -Wall -version-info 2:0:1 -lm -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxad -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase/.libs -o libpocketsphinx.la -rpath /usr/local/lib acmod.lo bin_mdef.lo blkarray_list.lo dict.lo dict2pid.lo fsg_history.lo fsg_lextree.lo fsg_search.lo hmm.lo mdef.lo ms_gauden.lo ms_mgau.lo ms_senone.lo ngram_search.lo ngram_search_fwdtree.lo ngram_search_fwdflat.lo phone_loop_search.lo ps_alignment.lo ps_lattice.lo ps_mllr.lo ptm_mgau.lo s2_semi_mgau.lo state_align_search.lo tmat.lo vector.lo pocketsphinx.lo -lsphinxbase @inst_prefix_dir@)"

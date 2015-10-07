@@ -2,7 +2,7 @@ prefix=/usr/local
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include
-libs= -L/usr/local/lib -lsphinxbase -lsphinxad -lpulse -lpulse-simple -lpthread -lm -lblas -llapack  
+libs= -lsphinxbase
 datarootdir=${prefix}/share
 modeldir=${datarootdir}/pocketsphinx/model
 

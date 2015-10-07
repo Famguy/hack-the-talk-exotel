@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('tied__mgau__common_8h_source.html','')
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifndef __TIED_MGAU_COMMON_H__</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define __TIED_MGAU_COMMON_H__</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/logmath.h&gt;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html">sphinxbase/logmath.h</a>&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/fixpoint.h&gt;</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#define MGAU_MIXW_VERSION       &quot;1.0&quot;   </span><span class="comment">/* Sphinx-3 file format version for mixw */</span><span class="preprocessor"></span></div>
@@ -147,9 +147,9 @@ $(document).ready(function(){initNavTree('tied__mgau__common_8h_source.html','')
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="tied__mgau__common_8h.html#ad739d757ed78293c18dc2386fd3b750e">   84</a></span>&#160;<span class="preprocessor">#define MAX_NEG_MIXW 159 </span></div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="tied__mgau__common_8h.html#a965d50d73044c3f2dc2589662fd2e89e">   85</a></span>&#160;<span class="preprocessor">#define MAX_NEG_ASCR 96  </span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">LOGMATH_INLINE int</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="tied__mgau__common_8h.html#a947ea19b4351ecbf70330e089994c3a1">  105</a></span>&#160;<span class="preprocessor"></span><a class="code" href="tied__mgau__common_8h.html#a947ea19b4351ecbf70330e089994c3a1">fast_logmath_add</a>(logmath_t *lmath, <span class="keywordtype">int</span> mlx, <span class="keywordtype">int</span> mly)</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="tied__mgau__common_8h.html#a947ea19b4351ecbf70330e089994c3a1">  105</a></span>&#160;<span class="preprocessor"></span><a class="code" href="tied__mgau__common_8h.html#a947ea19b4351ecbf70330e089994c3a1">fast_logmath_add</a>(<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structlogmath__s.html">logmath_t</a> *lmath, <span class="keywordtype">int</span> mlx, <span class="keywordtype">int</span> mly)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    logadd_t *t = LOGMATH_TABLE(lmath);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structlogadd__s.html">logadd_t</a> *t = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#ae5c5ce106e9f8f1e763d419de53317a8">LOGMATH_TABLE</a>(lmath);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> d, r;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">/* d must be positive, obviously. */</span></div>
@@ -162,18 +162,23 @@ $(document).ready(function(){initNavTree('tied__mgau__common_8h_source.html','')
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        r = mlx;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> r - (((uint8 *)t-&gt;table)[d]);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> r - (((uint8 *)t-&gt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structlogadd__s.html#a27793577d513d85cd73c2daffc140695">table</a>)[d]);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __TIED_MGAU_COMMON_H__ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structlogmath__s_html"><div class="ttname"><a href="../sphinxbase/structlogmath__s.html">logmath_s</a></div></div>
+<div class="ttc" id="structlogadd__s_html_a27793577d513d85cd73c2daffc140695"><div class="ttname"><a href="../sphinxbase/structlogadd__s.html#a27793577d513d85cd73c2daffc140695">logadd_s::table</a></div><div class="ttdeci">void * table</div></div>
+<div class="ttc" id="structlogadd__s_html"><div class="ttname"><a href="../sphinxbase/structlogadd__s.html">logadd_s</a></div></div>
 <div class="ttc" id="tied__mgau__common_8h_html_a947ea19b4351ecbf70330e089994c3a1"><div class="ttname"><a href="tied__mgau__common_8h.html#a947ea19b4351ecbf70330e089994c3a1">fast_logmath_add</a></div><div class="ttdeci">LOGMATH_INLINE int fast_logmath_add(logmath_t *lmath, int mlx, int mly)</div><div class="ttdoc">Quickly log-add two negated log probabilities. </div><div class="ttdef"><b>Definition:</b> <a href="tied__mgau__common_8h_source.html#l00105">tied_mgau_common.h:105</a></div></div>
+<div class="ttc" id="logmath_8h_html"><div class="ttname"><a href="../sphinxbase/logmath_8h.html">logmath.h</a></div></div>
+<div class="ttc" id="logmath_8h_html_ae5c5ce106e9f8f1e763d419de53317a8"><div class="ttname"><a href="../sphinxbase/logmath_8h.html#ae5c5ce106e9f8f1e763d419de53317a8">LOGMATH_TABLE</a></div><div class="ttdeci">#define LOGMATH_TABLE(lm)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="tied__mgau__common_8h.html">tied_mgau_common.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:34 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

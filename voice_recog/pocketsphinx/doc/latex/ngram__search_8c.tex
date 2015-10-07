@@ -24,7 +24,7 @@ N-\/\-Gram based multi-\/pass search (\char`\"{}\-F\-B\-S\char`\"{})
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf ps\-\_\-search\-\_\-t} $\ast$ {\bf ngram\-\_\-search\-\_\-init} (cmd\-\_\-ln\-\_\-t $\ast$config, {\bf acmod\-\_\-t} $\ast$acmod, {\bf dict\-\_\-t} $\ast$dict, {\bf dict2pid\-\_\-t} $\ast$d2p)\label{ngram__search_8c_afa0dcbb86340083bce1412c9309742bc}
+{\bf ps\-\_\-search\-\_\-t} $\ast$ {\bf ngram\-\_\-search\-\_\-init} ({\bf cmd\-\_\-ln\-\_\-t} $\ast$config, {\bf acmod\-\_\-t} $\ast$acmod, {\bf dict\-\_\-t} $\ast$dict, {\bf dict2pid\-\_\-t} $\ast$d2p)\label{ngram__search_8c_afa0dcbb86340083bce1412c9309742bc}
 
 \begin{DoxyCompactList}\small\item\em Initialize the N-\/\-Gram search module. \end{DoxyCompactList}\item 
 void {\bf ngram\-\_\-search\-\_\-free} ({\bf ps\-\_\-search\-\_\-t} $\ast$search)\label{ngram__search_8c_aeaf140dc2bbeaa5c274f73480b5328f3}
@@ -88,7 +88,7 @@ Definition at line 568 of file ngram\-\_\-search.\-c.
 
 
 
-References bptbl\-\_\-s\-::bp, dict\-\_\-real\-\_\-word(), ps\-\_\-search\-\_\-s\-::hyp\-\_\-str, and bptbl\-\_\-s\-::wid.
+References bptbl\-\_\-s\-::bp, ckd\-\_\-calloc, ckd\-\_\-free(), dict\-\_\-real\-\_\-word(), ps\-\_\-search\-\_\-s\-::hyp\-\_\-str, and bptbl\-\_\-s\-::wid.
 
 \index{ngram\-\_\-search.\-c@{ngram\-\_\-search.\-c}!ngram\-\_\-search\-\_\-find\-\_\-exit@{ngram\-\_\-search\-\_\-find\-\_\-exit}}
 \index{ngram\-\_\-search\-\_\-find\-\_\-exit@{ngram\-\_\-search\-\_\-find\-\_\-exit}!ngram_search.c@{ngram\-\_\-search.\-c}}
@@ -136,7 +136,7 @@ Definition at line 344 of file ngram\-\_\-search.\-c.
 
 
 
-References ngram\-\_\-search\-\_\-s\-::frm\-\_\-wordlist, and ngram\-\_\-search\-\_\-s\-::n\-\_\-frame\-\_\-alloc.
+References ckd\-\_\-realloc, ngram\-\_\-search\-\_\-s\-::frm\-\_\-wordlist, and ngram\-\_\-search\-\_\-s\-::n\-\_\-frame\-\_\-alloc.
 
 
 

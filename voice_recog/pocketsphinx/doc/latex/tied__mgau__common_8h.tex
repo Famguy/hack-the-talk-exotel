@@ -41,7 +41,7 @@ Common code shared between S\-C and P\-T\-M (tied-\/state) models.
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-L\-O\-G\-M\-A\-T\-H\-\_\-\-I\-N\-L\-I\-N\-E int {\bf fast\-\_\-logmath\-\_\-add} (logmath\-\_\-t $\ast$lmath, int mlx, int mly)
+L\-O\-G\-M\-A\-T\-H\-\_\-\-I\-N\-L\-I\-N\-E int {\bf fast\-\_\-logmath\-\_\-add} ({\bf logmath\-\_\-t} $\ast$lmath, int mlx, int mly)
 \begin{DoxyCompactList}\small\item\em Quickly log-\/add two negated log probabilities. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -82,7 +82,7 @@ Definition at line 84 of file tied\-\_\-mgau\-\_\-common.\-h.
 \index{fast\-\_\-logmath\-\_\-add@{fast\-\_\-logmath\-\_\-add}!tied_mgau_common.h@{tied\-\_\-mgau\-\_\-common.\-h}}
 \subsubsection[{fast\-\_\-logmath\-\_\-add}]{\setlength{\rightskip}{0pt plus 5cm}L\-O\-G\-M\-A\-T\-H\-\_\-\-I\-N\-L\-I\-N\-E int fast\-\_\-logmath\-\_\-add (
 \begin{DoxyParamCaption}
-\item[{logmath\-\_\-t $\ast$}]{lmath, }
+\item[{{\bf logmath\-\_\-t} $\ast$}]{lmath, }
 \item[{int}]{mlx, }
 \item[{int}]{mly}
 \end{DoxyParamCaption}
@@ -108,4 +108,8 @@ We can do some extra-\/fast log addition since we know that mixw+ascr is always 
 Note that the parameters are {\itshape negated} log probabilities (and hence, are positive numbers), as is the return value. This is the key to the \char`\"{}fastness\char`\"{} of this function. 
 
 Definition at line 105 of file tied\-\_\-mgau\-\_\-common.\-h.
+
+
+
+References L\-O\-G\-M\-A\-T\-H\-\_\-\-T\-A\-B\-L\-E, and logadd\-\_\-s\-::table.
 

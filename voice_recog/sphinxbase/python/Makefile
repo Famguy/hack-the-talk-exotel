@@ -103,7 +103,7 @@ EGREP = /bin/grep -E
 EXEEXT = 
 FGREP = /bin/grep -F
 GREP = /bin/grep
-HAVE_CYTHON = no
+HAVE_CYTHON = yes
 HAVE_DOXYGEN = yes
 HAVE_PKGCONFIG = yes
 INSTALL = /usr/bin/install -c
@@ -502,8 +502,8 @@ pymod-build-stamp: $(srcdir)/sphinxbase.c
 	$(PYTHON) setup.py build
 	touch $@
 
-#$(srcdir)/sphinxbase.c: $(srcdir)/sphinxbase.pyx $(srcdir)/sphinxbase.pxd
-#	cython -o $@ $<
+$(srcdir)/sphinxbase.c: $(srcdir)/sphinxbase.pyx $(srcdir)/sphinxbase.pxd
+	cython -o $@ $<
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

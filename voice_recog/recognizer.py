@@ -94,7 +94,22 @@ def recognize(wav_file):
     return result
 
 # Run the thing!
-if __name__ == '__main__':
-    save_audio(WAVE_OUTPUT_FILENAME)
-    result = recognize(WAVE_OUTPUT_FILENAME)
-    print "You just said: {0}".format(result[0])
+# if __name__ == '__main__':
+#     save_audio(WAVE_OUTPUT_FILENAME)
+#     result = recognize(WAVE_OUTPUT_FILENAME)
+#     print "You just said: {0}".format(result[0])
+
+import glob
+trainpath = '$HOME/GITHUB/hack-the-talk-exotel/voice_recog/training_dataset'
+trainpath1 = '$HOME/GITHUB/hack-the-talk-exotel/one.mp3'
+
+#angrylist = glob.glob(trainpath+'/angry/*.mp3')
+
+from pydub import AudioSegment
+
+sound = AudioSegment.from_mp3("one.mp3")
+sound.export("one.wav", format="wav")
+result = recognize("one.wav")
+#print "You just said: {0}".format(result[0])
+
+print result[0]

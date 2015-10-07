@@ -17,7 +17,7 @@ old_library='libpocketsphinx.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -L/usr/local/lib /usr/local/lib/libsphinxad.la /usr/local/lib/libsphinxbase.la -lpulse -lpulse-simple -lpthread -lm -lblas -llapack'
+dependency_libs=' -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxad -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase -L/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase/.libs /usr/local/lib/libsphinxbase.la -lpulse -lpulse-simple -lpthread -lm -lblas -llapack'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

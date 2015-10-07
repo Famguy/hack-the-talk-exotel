@@ -172,8 +172,8 @@ $(document).ready(function(){initNavTree('dict2pid_8h_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/* SphinxBase headers. */</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/logmath.h&gt;</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/bitvec.h&gt;</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html">sphinxbase/logmath.h</a>&gt;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/bitvec_8h.html">sphinxbase/bitvec.h</a>&gt;</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">/* Local headers. */</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="s3types_8h.html">s3types.h</a>&quot;</span></div>
@@ -275,7 +275,9 @@ $(document).ready(function(){initNavTree('dict2pid_8h_source.html','');});
 <div class="ttc" id="dict2pid_8h_html_aa94120dcea4b17807576e29484b8a008"><div class="ttname"><a href="dict2pid_8h.html#aa94120dcea4b17807576e29484b8a008">dict2pid_add_word</a></div><div class="ttdeci">int dict2pid_add_word(dict2pid_t *d2p, int32 wid)</div><div class="ttdoc">Add a word to the dict2pid structure (after adding it to dict). </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8c_source.html#l00298">dict2pid.c:298</a></div></div>
 <div class="ttc" id="dict2pid_8h_html_addd541f2275b79e284575fb11b7986e1"><div class="ttname"><a href="dict2pid_8h.html#addd541f2275b79e284575fb11b7986e1">dict2pid_build</a></div><div class="ttdeci">dict2pid_t * dict2pid_build(bin_mdef_t *mdef, dict_t *dict)</div><div class="ttdoc">Build the dict2pid structure for the given model/dictionary. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8c_source.html#l00388">dict2pid.c:388</a></div></div>
 <div class="ttc" id="dict2pid_8h_html_a720e15c92ef6930e722bccb014e11b7b"><div class="ttname"><a href="dict2pid_8h.html#a720e15c92ef6930e722bccb014e11b7b">dict2pid_internal</a></div><div class="ttdeci">s3ssid_t dict2pid_internal(dict2pid_t *d2p, int32 wid, int pos)</div><div class="ttdoc">Return the senone sequence ID for the given word position. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8c_source.html#l00367">dict2pid.c:367</a></div></div>
+<div class="ttc" id="logmath_8h_html"><div class="ttname"><a href="../sphinxbase/logmath_8h.html">logmath.h</a></div></div>
 <div class="ttc" id="structxwdssid__t_html_a502f9241a70383aa260d3390e4ff58fb"><div class="ttname"><a href="structxwdssid__t.html#a502f9241a70383aa260d3390e4ff58fb">xwdssid_t::cimap</a></div><div class="ttdeci">s3cipid_t * cimap</div><div class="ttdoc">Index into ssid[] above for each ci phone. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8h_source.html#l00139">dict2pid.h:139</a></div></div>
+<div class="ttc" id="bitvec_8h_html"><div class="ttname"><a href="../sphinxbase/bitvec_8h.html">bitvec.h</a></div></div>
 <div class="ttc" id="structdict2pid__t_html"><div class="ttname"><a href="structdict2pid__t.html">dict2pid_t</a></div><div class="ttdoc">Building composite triphone (as well as word internal triphones) with the dictionary. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8h_source.html#l00148">dict2pid.h:148</a></div></div>
 <div class="ttc" id="structxwdssid__t_html_adbeeda6e94a51f08626c13414cdad6a8"><div class="ttname"><a href="structxwdssid__t.html#adbeeda6e94a51f08626c13414cdad6a8">xwdssid_t::ssid</a></div><div class="ttdeci">s3ssid_t * ssid</div><div class="ttdoc">Senone Sequence ID list for all context ciphones. </div><div class="ttdef"><b>Definition:</b> <a href="dict2pid_8h_source.html#l00138">dict2pid.h:138</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -284,7 +286,7 @@ $(document).ready(function(){initNavTree('dict2pid_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="dict2pid_8h.html">dict2pid.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:33 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:58 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -93,7 +93,7 @@ struct {\bf dict\-\_\-t}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf dict\-\_\-t} $\ast$ {\bf dict\-\_\-init} (cmd\-\_\-ln\-\_\-t $\ast$config, {\bf bin\-\_\-mdef\-\_\-t} $\ast$mdef)
+{\bf dict\-\_\-t} $\ast$ {\bf dict\-\_\-init} ({\bf cmd\-\_\-ln\-\_\-t} $\ast$config, {\bf bin\-\_\-mdef\-\_\-t} $\ast$mdef)
 \begin{DoxyCompactList}\small\item\em Initialize a new dictionary. \end{DoxyCompactList}\item 
 int {\bf dict\-\_\-write} ({\bf dict\-\_\-t} $\ast$dict, char const $\ast$filename, char const $\ast$format)\label{dict_8h_a4bfa8e3b7b9ff30165375d1c97bb04b8}
 
@@ -177,7 +177,7 @@ Definition at line 80 of file dict.\-c.
 
 
 
-References dictword\-\_\-t\-::alt, B\-A\-D\-\_\-\-S3\-W\-I\-D, dictword\-\_\-t\-::basewid, dictword\-\_\-t\-::ciphone, dict\-\_\-word2basestr(), dict\-\_\-t\-::ht, dict\-\_\-t\-::max\-\_\-words, dict\-\_\-t\-::n\-\_\-word, dictword\-\_\-t\-::pronlen, dictword\-\_\-t\-::word, and dict\-\_\-t\-::word.
+References dictword\-\_\-t\-::alt, B\-A\-D\-\_\-\-S3\-W\-I\-D, dictword\-\_\-t\-::basewid, dictword\-\_\-t\-::ciphone, ckd\-\_\-free(), ckd\-\_\-malloc, ckd\-\_\-realloc, ckd\-\_\-salloc, dict\-\_\-word2basestr(), E\-\_\-\-E\-R\-R\-O\-R, E\-\_\-\-I\-N\-F\-O, hash\-\_\-table\-\_\-enter\-\_\-int32, hash\-\_\-table\-\_\-lookup\-\_\-int32(), dict\-\_\-t\-::ht, dict\-\_\-t\-::max\-\_\-words, dict\-\_\-t\-::n\-\_\-word, dictword\-\_\-t\-::pronlen, dictword\-\_\-t\-::word, and dict\-\_\-t\-::word.
 
 
 
@@ -252,7 +252,7 @@ Referenced by dict\-\_\-init(), ngram\-\_\-search\-\_\-lattice(), ps\-\_\-lattic
 \index{dict\-\_\-init@{dict\-\_\-init}!dict.h@{dict.\-h}}
 \subsubsection[{dict\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dict\-\_\-t}$\ast$ dict\-\_\-init (
 \begin{DoxyParamCaption}
-\item[{cmd\-\_\-ln\-\_\-t $\ast$}]{config, }
+\item[{{\bf cmd\-\_\-ln\-\_\-t} $\ast$}]{config, }
 \item[{{\bf bin\-\_\-mdef\-\_\-t} $\ast$}]{mdef}
 \end{DoxyParamCaption}
 )}\label{dict_8h_a05d8dac3e5fe5399ccb8bf7776e203e2}
@@ -277,7 +277,7 @@ Definition at line 251 of file dict.\-c.
 
 
 
-References B\-A\-D\-\_\-\-S3\-W\-I\-D, bin\-\_\-mdef\-\_\-retain(), dict\-\_\-add\-\_\-word(), dict\-\_\-filler\-\_\-word(), dict\-\_\-free(), dict\-\_\-wordid(), dict\-\_\-t\-::filler\-\_\-end, dict\-\_\-t\-::filler\-\_\-start, dict\-\_\-t\-::finishwid, dict\-\_\-t\-::ht, dict\-\_\-t\-::max\-\_\-words, dict\-\_\-t\-::mdef, dict\-\_\-t\-::n\-\_\-word, dict\-\_\-t\-::silwid, dict\-\_\-t\-::startwid, and dict\-\_\-t\-::word.
+References B\-A\-D\-\_\-\-S3\-W\-I\-D, bin\-\_\-mdef\-\_\-retain(), ckd\-\_\-calloc, ckd\-\_\-free(), cmd\-\_\-ln\-\_\-boolean\-\_\-r, cmd\-\_\-ln\-\_\-exists\-\_\-r(), cmd\-\_\-ln\-\_\-str\-\_\-r(), dict\-\_\-add\-\_\-word(), dict\-\_\-filler\-\_\-word(), dict\-\_\-free(), dict\-\_\-wordid(), E\-\_\-\-E\-R\-R\-O\-R, E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-Y\-S\-T\-E\-M, E\-\_\-\-I\-N\-F\-O, dict\-\_\-t\-::filler\-\_\-end, dict\-\_\-t\-::filler\-\_\-start, dict\-\_\-t\-::finishwid, hash\-\_\-table\-\_\-new(), dict\-\_\-t\-::ht, lineiter\-\_\-next(), lineiter\-\_\-start(), dict\-\_\-t\-::max\-\_\-words, dict\-\_\-t\-::mdef, dict\-\_\-t\-::n\-\_\-word, dict\-\_\-t\-::silwid, dict\-\_\-t\-::startwid, and dict\-\_\-t\-::word.
 
 
 
@@ -336,7 +336,7 @@ Definition at line 482 of file dict.\-c.
 
 
 
-References dict\-\_\-t\-::max\-\_\-words, and dict\-\_\-t\-::n\-\_\-word.
+References E\-\_\-\-I\-N\-F\-O\-\_\-\-N\-O\-F\-N, dict\-\_\-t\-::max\-\_\-words, and dict\-\_\-t\-::n\-\_\-word.
 
 \index{dict.\-h@{dict.\-h}!dict\-\_\-word2basestr@{dict\-\_\-word2basestr}}
 \index{dict\-\_\-word2basestr@{dict\-\_\-word2basestr}!dict.h@{dict.\-h}}
@@ -375,7 +375,7 @@ Definition at line 382 of file dict.\-c.
 
 
 
-References B\-A\-D\-\_\-\-S3\-W\-I\-D, and dict\-\_\-t\-::ht.
+References B\-A\-D\-\_\-\-S3\-W\-I\-D, hash\-\_\-table\-\_\-lookup\-\_\-int32(), and dict\-\_\-t\-::ht.
 
 
 

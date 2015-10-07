@@ -73,9 +73,9 @@ $(document).ready(function(){initNavTree('ms__gauden_8h.html','');});
 
 <p>(Sphinx 3.0 specific) Gaussian density module.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;sphinxbase/feat.h&gt;</code><br/>
-<code>#include &lt;sphinxbase/logmath.h&gt;</code><br/>
-<code>#include &lt;sphinxbase/cmd_ln.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/feat_8h.html">sphinxbase/feat.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html">sphinxbase/logmath.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/cmd__ln_8h.html">sphinxbase/cmd_ln.h</a>&gt;</code><br/>
 <code>#include &quot;vector.h&quot;</code><br/>
 <code>#include &quot;<a class="el" href="pocketsphinx__internal_8h_source.html">pocketsphinx_internal.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="hmm_8h_source.html">hmm.h</a>&quot;</code><br/>
@@ -93,13 +93,13 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae4587b0aeb39fd926622a422969ecebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgauden__t.html">gauden_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__gauden_8h.html#ae4587b0aeb39fd926622a422969ecebc">gauden_init</a> (char const *meanfile, char const *varfile, float32 varfloor, logmath_t *lmath)</td></tr>
+<tr class="memitem:ae4587b0aeb39fd926622a422969ecebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgauden__t.html">gauden_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__gauden_8h.html#ae4587b0aeb39fd926622a422969ecebc">gauden_init</a> (char const *meanfile, char const *varfile, float32 varfloor, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#ae613aa7db1dd40ff56a80a7dadb22cc8">logmath_t</a> *lmath)</td></tr>
 <tr class="memdesc:ae4587b0aeb39fd926622a422969ecebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read mixture gaussian codebooks from the given files.  <a href="#ae4587b0aeb39fd926622a422969ecebc">More...</a><br/></td></tr>
 <tr class="separator:ae4587b0aeb39fd926622a422969ecebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0306e088fa33894ca40182d2392ffe4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__gauden_8h.html#a0306e088fa33894ca40182d2392ffe4d">gauden_free</a> (<a class="el" href="structgauden__t.html">gauden_t</a> *g)</td></tr>
 <tr class="memdesc:a0306e088fa33894ca40182d2392ffe4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release memory allocated by gauden_init.  <a href="#a0306e088fa33894ca40182d2392ffe4d">More...</a><br/></td></tr>
 <tr class="separator:a0306e088fa33894ca40182d2392ffe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab640722f2c2b1e8bc6e883d9b5b72494"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__gauden_8h.html#ab640722f2c2b1e8bc6e883d9b5b72494">gauden_mllr_transform</a> (<a class="el" href="structgauden__t.html">gauden_t</a> *s, <a class="el" href="ps__mllr_8h.html#ad4b6bf4c3cb6a671f79f1d709857d5b1">ps_mllr_t</a> *mllr, cmd_ln_t *config)</td></tr>
+<tr class="memitem:ab640722f2c2b1e8bc6e883d9b5b72494"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__gauden_8h.html#ab640722f2c2b1e8bc6e883d9b5b72494">gauden_mllr_transform</a> (<a class="el" href="structgauden__t.html">gauden_t</a> *s, <a class="el" href="ps__mllr_8h.html#ad4b6bf4c3cb6a671f79f1d709857d5b1">ps_mllr_t</a> *mllr, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structcmd__ln__t.html">cmd_ln_t</a> *config)</td></tr>
 <tr class="memdesc:ab640722f2c2b1e8bc6e883d9b5b72494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform Gaussians according to an MLLR matrix (or, eventually, more).  <a href="#ab640722f2c2b1e8bc6e883d9b5b72494">More...</a><br/></td></tr>
 <tr class="separator:ab640722f2c2b1e8bc6e883d9b5b72494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68cd25af0a2faf05eacd17afd5407ea4"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__gauden_8h.html#a68cd25af0a2faf05eacd17afd5407ea4">gauden_dist</a> (<a class="el" href="structgauden__t.html">gauden_t</a> *g, int mgau, int n_top, mfcc_t **obs, <a class="el" href="structgauden__dist__t.html">gauden_dist_t</a> **out_dist)</td></tr>
@@ -239,7 +239,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ms__gauden_8c_source.html#l00148">148</a> of file <a class="el" href="ms__gauden_8c_source.html">ms_gauden.c</a>.</p>
 
-<p>References <a class="el" href="ms__gauden_8h_source.html#l00088">gauden_t::det</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, <a class="el" href="ms__gauden_8h_source.html#l00093">gauden_t::n_density</a>, <a class="el" href="ms__gauden_8h_source.html#l00092">gauden_t::n_feat</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
+<p>References <a class="el" href="ms__gauden_8h_source.html#l00088">gauden_t::det</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#ac3c705943d946708cea0a1443be1c853">E_INFO</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, <a class="el" href="ms__gauden_8h_source.html#l00093">gauden_t::n_density</a>, <a class="el" href="ms__gauden_8h_source.html#l00092">gauden_t::n_feat</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
 
 <p>Referenced by <a class="el" href="ms__gauden_8c_source.html#l00138">gauden_dump()</a>.</p>
 
@@ -264,7 +264,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ms__gauden_8c_source.html#l00399">399</a> of file <a class="el" href="ms__gauden_8c_source.html">ms_gauden.c</a>.</p>
 
-<p>References <a class="el" href="ms__gauden_8h_source.html#l00088">gauden_t::det</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
+<p>References <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free()</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a443accde4663a4a07c6d147088614d57">ckd_free_3d()</a>, <a class="el" href="ms__gauden_8h_source.html#l00088">gauden_t::det</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">logmath_t *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#ae613aa7db1dd40ff56a80a7dadb22cc8">logmath_t</a> *&#160;</td>
           <td class="paramname"><em>lmath</em>&#160;</td>
         </tr>
         <tr>
@@ -317,7 +317,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ms__gauden_8c_source.html#l00361">361</a> of file <a class="el" href="ms__gauden_8c_source.html">ms_gauden.c</a>.</p>
 
-<p>References <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="ms__gauden_8h_source.html#l00090">gauden_t::lmath</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, <a class="el" href="ms__gauden_8h_source.html#l00093">gauden_t::n_density</a>, <a class="el" href="ms__gauden_8h_source.html#l00092">gauden_t::n_feat</a>, <a class="el" href="ms__gauden_8h_source.html#l00091">gauden_t::n_mgau</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
+<p>References <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free()</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a1a4495946ab2449d61108fe829a94613">E_FATAL</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="ms__gauden_8h_source.html#l00090">gauden_t::lmath</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, <a class="el" href="ms__gauden_8h_source.html#l00093">gauden_t::n_density</a>, <a class="el" href="ms__gauden_8h_source.html#l00092">gauden_t::n_feat</a>, <a class="el" href="ms__gauden_8h_source.html#l00091">gauden_t::n_mgau</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
 
 </div>
 </div>
@@ -340,7 +340,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">cmd_ln_t *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structcmd__ln__t.html">cmd_ln_t</a> *&#160;</td>
           <td class="paramname"><em>config</em>&#160;</td>
         </tr>
         <tr>
@@ -355,7 +355,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ms__gauden_8c_source.html#l00550">550</a> of file <a class="el" href="ms__gauden_8c_source.html">ms_gauden.c</a>.</p>
 
-<p>References <a class="el" href="acmod_8h_source.html#l00087">ps_mllr_s::A</a>, <a class="el" href="acmod_8h_source.html#l00088">ps_mllr_s::b</a>, <a class="el" href="ms__gauden_8h_source.html#l00088">gauden_t::det</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="acmod_8h_source.html#l00089">ps_mllr_s::h</a>, <a class="el" href="ms__gauden_8h_source.html#l00090">gauden_t::lmath</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, <a class="el" href="ms__gauden_8h_source.html#l00093">gauden_t::n_density</a>, <a class="el" href="ms__gauden_8h_source.html#l00092">gauden_t::n_feat</a>, <a class="el" href="ms__gauden_8h_source.html#l00091">gauden_t::n_mgau</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
+<p>References <a class="el" href="acmod_8h_source.html#l00087">ps_mllr_s::A</a>, <a class="el" href="acmod_8h_source.html#l00088">ps_mllr_s::b</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free()</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a443accde4663a4a07c6d147088614d57">ckd_free_3d()</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/cmd__ln_8h.html#af0aa15288e06fc8271298e4fa7cdc91a">cmd_ln_str_r()</a>, <a class="el" href="ms__gauden_8h_source.html#l00088">gauden_t::det</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a1a4495946ab2449d61108fe829a94613">E_FATAL</a>, <a class="el" href="ms__gauden_8h_source.html#l00094">gauden_t::featlen</a>, <a class="el" href="acmod_8h_source.html#l00089">ps_mllr_s::h</a>, <a class="el" href="ms__gauden_8h_source.html#l00090">gauden_t::lmath</a>, <a class="el" href="ms__gauden_8h_source.html#l00086">gauden_t::mean</a>, <a class="el" href="ms__gauden_8h_source.html#l00093">gauden_t::n_density</a>, <a class="el" href="ms__gauden_8h_source.html#l00092">gauden_t::n_feat</a>, <a class="el" href="ms__gauden_8h_source.html#l00091">gauden_t::n_mgau</a>, and <a class="el" href="ms__gauden_8h_source.html#l00087">gauden_t::var</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="ms__gauden_8h.html">ms_gauden.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:34 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

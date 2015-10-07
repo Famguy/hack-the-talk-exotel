@@ -96,10 +96,10 @@ typedef struct {\bf bin\-\_\-mdef\-\_\-s} {\bf bin\-\_\-mdef\-\_\-t}\label{bin__
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf bin\-\_\-mdef\-\_\-t} $\ast$ {\bf bin\-\_\-mdef\-\_\-read} (cmd\-\_\-ln\-\_\-t $\ast$config, const char $\ast$filename)\label{bin__mdef_8h_a3930ae6b3309a615335585db4b46306f}
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf bin\-\_\-mdef\-\_\-t} $\ast$ {\bf bin\-\_\-mdef\-\_\-read} ({\bf cmd\-\_\-ln\-\_\-t} $\ast$config, const char $\ast$filename)\label{bin__mdef_8h_a3930ae6b3309a615335585db4b46306f}
 
 \begin{DoxyCompactList}\small\item\em Read a binary mdef from a file. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf bin\-\_\-mdef\-\_\-t} $\ast$ {\bf bin\-\_\-mdef\-\_\-read\-\_\-text} (cmd\-\_\-ln\-\_\-t $\ast$config, const char $\ast$filename)\label{bin__mdef_8h_a00dab94d45d1adc5f7778fd1e2398031}
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf bin\-\_\-mdef\-\_\-t} $\ast$ {\bf bin\-\_\-mdef\-\_\-read\-\_\-text} ({\bf cmd\-\_\-ln\-\_\-t} $\ast$config, const char $\ast$filename)\label{bin__mdef_8h_a00dab94d45d1adc5f7778fd1e2398031}
 
 \begin{DoxyCompactList}\small\item\em Read a text mdef from a file (creating an in-\/memory binary mdef). \end{DoxyCompactList}\item 
 P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T int {\bf bin\-\_\-mdef\-\_\-write} ({\bf bin\-\_\-mdef\-\_\-t} $\ast$m, const char $\ast$filename)\label{bin__mdef_8h_a982b8e598afed47805fab1509e8fc4bb}
@@ -259,7 +259,7 @@ Definition at line 714 of file bin\-\_\-mdef.\-c.
 
 
 
-References bin\-\_\-mdef\-\_\-s\-::ciname, and bin\-\_\-mdef\-\_\-s\-::n\-\_\-ciphone.
+References bin\-\_\-mdef\-\_\-s\-::ciname, bin\-\_\-mdef\-\_\-s\-::n\-\_\-ciphone, and strcmp\-\_\-nocase().
 
 \index{bin\-\_\-mdef.\-h@{bin\-\_\-mdef.\-h}!bin\-\_\-mdef\-\_\-ciphone\-\_\-str@{bin\-\_\-mdef\-\_\-ciphone\-\_\-str}}
 \index{bin\-\_\-mdef\-\_\-ciphone\-\_\-str@{bin\-\_\-mdef\-\_\-ciphone\-\_\-str}!bin_mdef.h@{bin\-\_\-mdef.\-h}}
@@ -322,7 +322,7 @@ Definition at line 745 of file bin\-\_\-mdef.\-c.
 
 
 
-References bin\-\_\-mdef\-\_\-s\-::cd\-\_\-tree, mdef\-\_\-entry\-\_\-s\-::ci, bin\-\_\-mdef\-\_\-s\-::ciname, cd\-\_\-tree\-\_\-s\-::ctx, cd\-\_\-tree\-\_\-s\-::down, cd\-\_\-tree\-\_\-s\-::n\-\_\-down, N\-\_\-\-W\-O\-R\-D\-\_\-\-P\-O\-S\-N, bin\-\_\-mdef\-\_\-s\-::phone, cd\-\_\-tree\-\_\-s\-::pid, and bin\-\_\-mdef\-\_\-s\-::sil.
+References bin\-\_\-mdef\-\_\-s\-::cd\-\_\-tree, mdef\-\_\-entry\-\_\-s\-::ci, bin\-\_\-mdef\-\_\-s\-::ciname, cd\-\_\-tree\-\_\-s\-::ctx, cd\-\_\-tree\-\_\-s\-::down, E\-\_\-\-I\-N\-F\-O, cd\-\_\-tree\-\_\-s\-::n\-\_\-down, N\-\_\-\-W\-O\-R\-D\-\_\-\-P\-O\-S\-N, bin\-\_\-mdef\-\_\-s\-::phone, cd\-\_\-tree\-\_\-s\-::pid, and bin\-\_\-mdef\-\_\-s\-::sil.
 
 \index{bin\-\_\-mdef.\-h@{bin\-\_\-mdef.\-h}!bin\-\_\-mdef\-\_\-phone\-\_\-str@{bin\-\_\-mdef\-\_\-phone\-\_\-str}}
 \index{bin\-\_\-mdef\-\_\-phone\-\_\-str@{bin\-\_\-mdef\-\_\-phone\-\_\-str}!bin_mdef.h@{bin\-\_\-mdef.\-h}}

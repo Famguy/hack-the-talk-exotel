@@ -70,7 +70,7 @@ char const $\ast$ {\bf ps\-\_\-lattice\-\_\-hyp} ({\bf ps\-\_\-lattice\-\_\-t} $
 {\bf ps\-\_\-seg\-\_\-t} $\ast$ {\bf ps\-\_\-lattice\-\_\-seg\-\_\-iter} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, {\bf ps\-\_\-latlink\-\_\-t} $\ast$link, float32 lwf)\label{ps__lattice__internal_8h_afedbc5558c18f7d029e84a4e27e38187}
 
 \begin{DoxyCompactList}\small\item\em Get hypothesis segmentation iterator after bestpath search. \end{DoxyCompactList}\item 
-{\bf ps\-\_\-astar\-\_\-t} $\ast$ {\bf ps\-\_\-astar\-\_\-start} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, ngram\-\_\-model\-\_\-t $\ast$lmset, float32 lwf, int sf, int ef, int w1, int w2)
+{\bf ps\-\_\-astar\-\_\-t} $\ast$ {\bf ps\-\_\-astar\-\_\-start} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, {\bf ngram\-\_\-model\-\_\-t} $\ast$lmset, float32 lwf, int sf, int ef, int w1, int w2)
 \begin{DoxyCompactList}\small\item\em Begin N-\/\-Gram based A$\ast$ search on a word graph. \end{DoxyCompactList}\item 
 {\bf ps\-\_\-latpath\-\_\-t} $\ast$ {\bf ps\-\_\-astar\-\_\-next} ({\bf ps\-\_\-astar\-\_\-t} $\ast$nbest)
 \begin{DoxyCompactList}\small\item\em Find next best hypothesis of A$\ast$ on a word graph. \end{DoxyCompactList}\item 
@@ -141,7 +141,7 @@ Referenced by ps\-\_\-nbest\-\_\-next().
 \subsubsection[{ps\-\_\-astar\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ps\-\_\-astar\-\_\-t}$\ast$ ps\-\_\-astar\-\_\-start (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-lattice\-\_\-t} $\ast$}]{dag, }
-\item[{ngram\-\_\-model\-\_\-t $\ast$}]{lmset, }
+\item[{{\bf ngram\-\_\-model\-\_\-t} $\ast$}]{lmset, }
 \item[{float32}]{lwf, }
 \item[{int}]{sf, }
 \item[{int}]{ef, }
@@ -173,7 +173,7 @@ Definition at line 1665 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latnode\-\_\-s\-::basewid, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-astar\-\_\-s\-::latpath\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-latpath\-\_\-s\-::node, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-latpath\-\_\-s\-::parent, ps\-\_\-latnode\-\_\-s\-::rem\-\_\-score, ps\-\_\-latpath\-\_\-s\-::score, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
+References ps\-\_\-latnode\-\_\-s\-::basewid, ckd\-\_\-calloc, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-astar\-\_\-s\-::latpath\-\_\-alloc, listelem\-\_\-alloc\-\_\-init(), listelem\-\_\-malloc, ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ngram\-\_\-bg\-\_\-score(), ngram\-\_\-tg\-\_\-score(), ps\-\_\-latpath\-\_\-s\-::node, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-latpath\-\_\-s\-::parent, ps\-\_\-latnode\-\_\-s\-::rem\-\_\-score, ps\-\_\-latpath\-\_\-s\-::score, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
 
 
 

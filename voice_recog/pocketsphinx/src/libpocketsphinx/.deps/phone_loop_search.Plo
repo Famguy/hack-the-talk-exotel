@@ -1,5 +1,5 @@
 phone_loop_search.lo: phone_loop_search.c /usr/include/stdc-predef.h \
- /usr/local/include/sphinxbase/err.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h /usr/include/stdio.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -16,15 +16,16 @@ phone_loop_search.lo: phone_loop_search.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/local/include/sphinxbase/sphinxbase_export.h phone_loop_search.h \
- /usr/local/include/sphinxbase/cmd_ln.h \
- /usr/local/include/sphinxbase/prim_type.h \
- /usr/local/include/sphinxbase/sphinx_config.h \
- /usr/local/include/sphinxbase/logmath.h \
- /usr/local/include/sphinxbase/ngram_model.h \
- /usr/local/include/sphinxbase/mmio.h \
- /usr/local/include/sphinxbase/listelem_alloc.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h \
+ phone_loop_search.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmd_ln.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/logmath.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ngram_model.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/mmio.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/listelem_alloc.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -40,37 +41,40 @@ phone_loop_search.lo: phone_loop_search.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h pocketsphinx_internal.h \
- /usr/local/include/sphinxbase/fe.h \
- /usr/local/include/sphinxbase/fixpoint.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fe.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fixpoint.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/local/include/sphinxbase/feat.h /usr/local/include/sphinxbase/cmn.h \
- /usr/local/include/sphinxbase/agc.h \
- /usr/local/include/sphinxbase/profile.h ../../include/pocketsphinx.h \
- ../../include/pocketsphinx_export.h ../../include/cmdln_macro.h \
- ../../include/ps_lattice.h ../../include/ps_mllr.h \
- ../../include/fsg_set.h /usr/local/include/sphinxbase/fsg_model.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/feat.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmn.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/agc.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/profile.h \
+ ../../include/pocketsphinx.h ../../include/pocketsphinx_export.h \
+ ../../include/cmdln_macro.h ../../include/ps_lattice.h \
+ ../../include/ps_mllr.h ../../include/fsg_set.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fsg_model.h \
  /usr/include/string.h /usr/include/xlocale.h \
  /usr/include/x86_64-linux-gnu/bits/string.h \
  /usr/include/x86_64-linux-gnu/bits/string2.h \
  /usr/include/x86_64-linux-gnu/bits/string3.h \
- /usr/local/include/sphinxbase/glist.h \
- /usr/local/include/sphinxbase/bitvec.h \
- /usr/local/include/sphinxbase/ckd_alloc.h /usr/include/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/glist.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/bitvec.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h \
+ /usr/include/setjmp.h /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
- /usr/local/include/sphinxbase/hash_table.h \
- /usr/local/include/sphinxbase/jsgf.h acmod.h bin_mdef.h mdef.h tmat.h \
- hmm.h dict.h s3types.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /usr/include/assert.h dict2pid.h
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/hash_table.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/jsgf.h \
+ acmod.h bin_mdef.h mdef.h tmat.h hmm.h dict.h s3types.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h /usr/include/assert.h \
+ dict2pid.h
 
 /usr/include/stdc-predef.h:
 
-/usr/local/include/sphinxbase/err.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
 
@@ -118,23 +122,23 @@ phone_loop_search.lo: phone_loop_search.c /usr/include/stdc-predef.h \
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/local/include/sphinxbase/sphinxbase_export.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h:
 
 phone_loop_search.h:
 
-/usr/local/include/sphinxbase/cmd_ln.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmd_ln.h:
 
-/usr/local/include/sphinxbase/prim_type.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h:
 
-/usr/local/include/sphinxbase/sphinx_config.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h:
 
-/usr/local/include/sphinxbase/logmath.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/logmath.h:
 
-/usr/local/include/sphinxbase/ngram_model.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ngram_model.h:
 
-/usr/local/include/sphinxbase/mmio.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/mmio.h:
 
-/usr/local/include/sphinxbase/listelem_alloc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/listelem_alloc.h:
 
 /usr/include/stdlib.h:
 
@@ -178,9 +182,9 @@ phone_loop_search.h:
 
 pocketsphinx_internal.h:
 
-/usr/local/include/sphinxbase/fe.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fe.h:
 
-/usr/local/include/sphinxbase/fixpoint.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fixpoint.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
 
@@ -196,13 +200,13 @@ pocketsphinx_internal.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/local/include/sphinxbase/feat.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/feat.h:
 
-/usr/local/include/sphinxbase/cmn.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmn.h:
 
-/usr/local/include/sphinxbase/agc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/agc.h:
 
-/usr/local/include/sphinxbase/profile.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/profile.h:
 
 ../../include/pocketsphinx.h:
 
@@ -216,7 +220,7 @@ pocketsphinx_internal.h:
 
 ../../include/fsg_set.h:
 
-/usr/local/include/sphinxbase/fsg_model.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fsg_model.h:
 
 /usr/include/string.h:
 
@@ -228,11 +232,11 @@ pocketsphinx_internal.h:
 
 /usr/include/x86_64-linux-gnu/bits/string3.h:
 
-/usr/local/include/sphinxbase/glist.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/glist.h:
 
-/usr/local/include/sphinxbase/bitvec.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/bitvec.h:
 
-/usr/local/include/sphinxbase/ckd_alloc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /usr/include/setjmp.h:
 
@@ -240,9 +244,9 @@ pocketsphinx_internal.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp2.h:
 
-/usr/local/include/sphinxbase/hash_table.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/hash_table.h:
 
-/usr/local/include/sphinxbase/jsgf.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/jsgf.h:
 
 acmod.h:
 

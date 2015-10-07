@@ -25,7 +25,7 @@ typedef uint8 {\bf senprob\-\_\-t}\label{ms__senone_8h_af5f6b21f81649ae1d6ce57f5
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf senone\-\_\-t} $\ast$ {\bf senone\-\_\-init} ({\bf gauden\-\_\-t} $\ast$g, char const $\ast$mixwfile, char const $\ast$mgau\-\_\-mapfile, float32 mixwfloor, logmath\-\_\-t $\ast$lmath, {\bf bin\-\_\-mdef\-\_\-t} $\ast$mdef)
+{\bf senone\-\_\-t} $\ast$ {\bf senone\-\_\-init} ({\bf gauden\-\_\-t} $\ast$g, char const $\ast$mixwfile, char const $\ast$mgau\-\_\-mapfile, float32 mixwfloor, {\bf logmath\-\_\-t} $\ast$lmath, {\bf bin\-\_\-mdef\-\_\-t} $\ast$mdef)
 \begin{DoxyCompactList}\small\item\em Load a set of senones (mixing weights and mixture gaussian codebook mappings) from the given files. \end{DoxyCompactList}\item 
 void {\bf senone\-\_\-free} ({\bf senone\-\_\-t} $\ast$s)
 \begin{DoxyCompactList}\small\item\em Release memory allocated by senone\-\_\-init. \end{DoxyCompactList}\item 
@@ -84,7 +84,7 @@ Definition at line 341 of file ms\-\_\-senone.\-c.
 
 
 
-References senone\-\_\-t\-::featscr, senone\-\_\-t\-::lmath, senone\-\_\-t\-::mgau, and senone\-\_\-t\-::pdf.
+References ckd\-\_\-free(), ckd\-\_\-free\-\_\-3d(), senone\-\_\-t\-::featscr, senone\-\_\-t\-::lmath, logmath\-\_\-free(), senone\-\_\-t\-::mgau, and senone\-\_\-t\-::pdf.
 
 \index{ms\-\_\-senone.\-h@{ms\-\_\-senone.\-h}!senone\-\_\-init@{senone\-\_\-init}}
 \index{senone\-\_\-init@{senone\-\_\-init}!ms_senone.h@{ms\-\_\-senone.\-h}}
@@ -94,7 +94,7 @@ References senone\-\_\-t\-::featscr, senone\-\_\-t\-::lmath, senone\-\_\-t\-::mg
 \item[{char const $\ast$}]{mixwfile, }
 \item[{char const $\ast$}]{mgau\-\_\-mapfile, }
 \item[{float32}]{mixwfloor, }
-\item[{logmath\-\_\-t $\ast$}]{lmath, }
+\item[{{\bf logmath\-\_\-t} $\ast$}]{lmath, }
 \item[{{\bf bin\-\_\-mdef\-\_\-t} $\ast$}]{mdef}
 \end{DoxyParamCaption}
 )}\label{ms__senone_8h_a757e0e72a8e5db3c69611f83143b8887}
@@ -126,5 +126,5 @@ Definition at line 275 of file ms\-\_\-senone.\-c.
 
 
 
-References senone\-\_\-t\-::featscr, senone\-\_\-t\-::lmath, senone\-\_\-t\-::mgau, senone\-\_\-t\-::mixwfloor, senone\-\_\-t\-::n\-\_\-gauden, gauden\-\_\-t\-::n\-\_\-mgau, senone\-\_\-t\-::n\-\_\-sen, and S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T.
+References ckd\-\_\-calloc, E\-\_\-\-F\-A\-T\-A\-L, E\-\_\-\-I\-N\-F\-O, senone\-\_\-t\-::featscr, senone\-\_\-t\-::lmath, logmath\-\_\-get\-\_\-base(), logmath\-\_\-init(), senone\-\_\-t\-::mgau, senone\-\_\-t\-::mixwfloor, senone\-\_\-t\-::n\-\_\-gauden, gauden\-\_\-t\-::n\-\_\-mgau, senone\-\_\-t\-::n\-\_\-sen, and S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T.
 

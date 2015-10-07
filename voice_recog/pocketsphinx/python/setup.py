@@ -61,15 +61,15 @@ try:
 except KeyError:
     pygtk_includes = []
 
-# If there is no  and friends use pkg-config
-if '' == '' or '' == '':
+# If there is no /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase and friends use pkg-config
+if '/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase' == '' or '/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase' == '':
     sbconf = pkgconfig('sphinxbase')
     sb_libdirs = sbconf.get('library_dirs', [])
     sb_includes = sbconf.get('include_dirs', [])
 else:
-    sb_includes = ['/include',
-                   '/include']
-    sb_libdirs = ['/src/libsphinxbase/.libs']
+    sb_includes = ['/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include',
+                   '/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include']
+    sb_libdirs = ['/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/src/libsphinxbase/.libs']
 
 libraries = ['pocketsphinx', 'sphinxbase']
 if sys.platform == "cygwin":

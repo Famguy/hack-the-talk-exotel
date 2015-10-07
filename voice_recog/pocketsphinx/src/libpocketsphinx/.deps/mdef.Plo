@@ -31,18 +31,19 @@ mdef.lo: mdef.c /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/assert.h \
- /usr/local/include/sphinxbase/ckd_alloc.h /usr/include/setjmp.h \
- /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h \
+ /usr/include/setjmp.h /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp2.h \
- /usr/local/include/sphinxbase/sphinxbase_export.h \
- /usr/local/include/sphinxbase/prim_type.h \
- /usr/local/include/sphinxbase/sphinx_config.h \
- /usr/local/include/sphinxbase/err.h /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- mdef.h /usr/local/include/sphinxbase/hash_table.h \
- /usr/local/include/sphinxbase/glist.h
+ mdef.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/hash_table.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/glist.h
 
 /usr/include/stdc-predef.h:
 
@@ -132,7 +133,7 @@ mdef.lo: mdef.c /usr/include/stdc-predef.h /usr/include/stdio.h \
 
 /usr/include/assert.h:
 
-/usr/local/include/sphinxbase/ckd_alloc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h:
 
 /usr/include/setjmp.h:
 
@@ -140,13 +141,13 @@ mdef.lo: mdef.c /usr/include/stdc-predef.h /usr/include/stdio.h \
 
 /usr/include/x86_64-linux-gnu/bits/setjmp2.h:
 
-/usr/local/include/sphinxbase/sphinxbase_export.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/usr/local/include/sphinxbase/prim_type.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h:
 
-/usr/local/include/sphinxbase/sphinx_config.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h:
 
-/usr/local/include/sphinxbase/err.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h:
 
 /usr/include/errno.h:
 
@@ -162,6 +163,6 @@ mdef.lo: mdef.c /usr/include/stdc-predef.h /usr/include/stdio.h \
 
 mdef.h:
 
-/usr/local/include/sphinxbase/hash_table.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/hash_table.h:
 
-/usr/local/include/sphinxbase/glist.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/glist.h:

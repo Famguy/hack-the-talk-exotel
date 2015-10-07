@@ -74,10 +74,10 @@ $(document).ready(function(){initNavTree('ms__senone_8h.html','');});
 
 <p>(Sphinx 3.0 specific) multiple streams senones.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;sphinxbase/err.h&gt;</code><br/>
-<code>#include &lt;sphinxbase/ckd_alloc.h&gt;</code><br/>
-<code>#include &lt;sphinxbase/cmd_ln.h&gt;</code><br/>
-<code>#include &lt;sphinxbase/logmath.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html">sphinxbase/err.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html">sphinxbase/ckd_alloc.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/cmd__ln_8h.html">sphinxbase/cmd_ln.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html">sphinxbase/logmath.h</a>&gt;</code><br/>
 <code>#include &quot;<a class="el" href="ms__gauden_8h_source.html">ms_gauden.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="bin__mdef_8h_source.html">bin_mdef.h</a>&quot;</code><br/>
 </div>
@@ -98,7 +98,7 @@ typedef uint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a757e0e72a8e5db3c69611f83143b8887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsenone__t.html">senone_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__senone_8h.html#a757e0e72a8e5db3c69611f83143b8887">senone_init</a> (<a class="el" href="structgauden__t.html">gauden_t</a> *g, char const *mixwfile, char const *mgau_mapfile, float32 mixwfloor, logmath_t *lmath, <a class="el" href="bin__mdef_8h.html#a269082d84ae254593b79f1eafe9b2d12">bin_mdef_t</a> *mdef)</td></tr>
+<tr class="memitem:a757e0e72a8e5db3c69611f83143b8887"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structsenone__t.html">senone_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__senone_8h.html#a757e0e72a8e5db3c69611f83143b8887">senone_init</a> (<a class="el" href="structgauden__t.html">gauden_t</a> *g, char const *mixwfile, char const *mgau_mapfile, float32 mixwfloor, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#ae613aa7db1dd40ff56a80a7dadb22cc8">logmath_t</a> *lmath, <a class="el" href="bin__mdef_8h.html#a269082d84ae254593b79f1eafe9b2d12">bin_mdef_t</a> *mdef)</td></tr>
 <tr class="memdesc:a757e0e72a8e5db3c69611f83143b8887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a set of senones (mixing weights and mixture gaussian codebook mappings) from the given files.  <a href="#a757e0e72a8e5db3c69611f83143b8887">More...</a><br/></td></tr>
 <tr class="separator:a757e0e72a8e5db3c69611f83143b8887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86881df5bbbd615e2cd8171e3b086fa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ms__senone_8h.html#a86881df5bbbd615e2cd8171e3b086fa6">senone_free</a> (<a class="el" href="structsenone__t.html">senone_t</a> *s)</td></tr>
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ms__senone_8c_source.html#l00341">341</a> of file <a class="el" href="ms__senone_8c_source.html">ms_senone.c</a>.</p>
 
-<p>References <a class="el" href="ms__senone_8h_source.html#l00162">senone_t::featscr</a>, <a class="el" href="ms__senone_8h_source.html#l00155">senone_t::lmath</a>, <a class="el" href="ms__senone_8h_source.html#l00161">senone_t::mgau</a>, and <a class="el" href="ms__senone_8h_source.html#l00148">senone_t::pdf</a>.</p>
+<p>References <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free()</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a443accde4663a4a07c6d147088614d57">ckd_free_3d()</a>, <a class="el" href="ms__senone_8h_source.html#l00162">senone_t::featscr</a>, <a class="el" href="ms__senone_8h_source.html#l00155">senone_t::lmath</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#a97865ef8bc1e8e2525a2329e0627ecfb">logmath_free()</a>, <a class="el" href="ms__senone_8h_source.html#l00161">senone_t::mgau</a>, and <a class="el" href="ms__senone_8h_source.html#l00148">senone_t::pdf</a>.</p>
 
 </div>
 </div>
@@ -217,7 +217,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">logmath_t *&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#ae613aa7db1dd40ff56a80a7dadb22cc8">logmath_t</a> *&#160;</td>
           <td class="paramname"><em>lmath</em>, </td>
         </tr>
         <tr>
@@ -251,7 +251,7 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="ms__senone_8c_source.html#l00275">275</a> of file <a class="el" href="ms__senone_8c_source.html">ms_senone.c</a>.</p>
 
-<p>References <a class="el" href="ms__senone_8h_source.html#l00162">senone_t::featscr</a>, <a class="el" href="ms__senone_8h_source.html#l00155">senone_t::lmath</a>, <a class="el" href="ms__senone_8h_source.html#l00161">senone_t::mgau</a>, <a class="el" href="ms__senone_8h_source.html#l00160">senone_t::mixwfloor</a>, <a class="el" href="ms__senone_8h_source.html#l00159">senone_t::n_gauden</a>, <a class="el" href="ms__gauden_8h_source.html#l00091">gauden_t::n_mgau</a>, <a class="el" href="ms__senone_8h_source.html#l00156">senone_t::n_sen</a>, and <a class="el" href="hmm_8h_source.html#l00077">SENSCR_SHIFT</a>.</p>
+<p>References <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a1a4495946ab2449d61108fe829a94613">E_FATAL</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#ac3c705943d946708cea0a1443be1c853">E_INFO</a>, <a class="el" href="ms__senone_8h_source.html#l00162">senone_t::featscr</a>, <a class="el" href="ms__senone_8h_source.html#l00155">senone_t::lmath</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#a6114206ec0321d7015c42fc7b81cb83e">logmath_get_base()</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html#a5835860c5f6a703c80c0214f816f0b11">logmath_init()</a>, <a class="el" href="ms__senone_8h_source.html#l00161">senone_t::mgau</a>, <a class="el" href="ms__senone_8h_source.html#l00160">senone_t::mixwfloor</a>, <a class="el" href="ms__senone_8h_source.html#l00159">senone_t::n_gauden</a>, <a class="el" href="ms__gauden_8h_source.html#l00091">gauden_t::n_mgau</a>, <a class="el" href="ms__senone_8h_source.html#l00156">senone_t::n_sen</a>, and <a class="el" href="hmm_8h_source.html#l00077">SENSCR_SHIFT</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="ms__senone_8h.html">ms_senone.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:34 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

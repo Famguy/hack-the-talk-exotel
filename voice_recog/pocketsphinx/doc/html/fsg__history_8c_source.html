@@ -121,9 +121,9 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#include &lt;assert.h&gt;</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/* SphinxBase headers. */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/prim_type.h&gt;</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/err.h&gt;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/ckd_alloc.h&gt;</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/prim__type_8h.html">sphinxbase/prim_type.h</a>&gt;</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html">sphinxbase/err.h</a>&gt;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html">sphinxbase/ckd_alloc.h</a>&gt;</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">/* Local headers. */</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#include &quot;fsg_search_internal.h&quot;</span></div>
@@ -138,14 +138,14 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="structfsg__history__s.html">fsg_history_t</a> *h;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    h = (<a class="code" href="structfsg__history__s.html">fsg_history_t</a> *) ckd_calloc(1, <span class="keyword">sizeof</span>(<a class="code" href="structfsg__history__s.html">fsg_history_t</a>));</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    h = (<a class="code" href="structfsg__history__s.html">fsg_history_t</a> *) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(<a class="code" href="structfsg__history__s.html">fsg_history_t</a>));</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    h-&gt;fsg = fsg;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    h-&gt;entries = blkarray_list_init();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (fsg &amp;&amp; dict) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        h-&gt;n_ciphone = bin_mdef_n_ciphone(dict-&gt;<a class="code" href="structdict__t.html#a3a01eb5a3ebda5652d434be26e0cfdd2">mdef</a>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        h-&gt;frame_entries =</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            (glist_t **) ckd_calloc_2d(fsg_model_n_state(fsg),</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            (glist_t **) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a949e7b50fcd9697b1563fa57f50e9c4f">ckd_calloc_2d</a>(fsg_model_n_state(fsg),</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                       bin_mdef_n_ciphone(dict-&gt;<a class="code" href="structdict__t.html#a3a01eb5a3ebda5652d434be26e0cfdd2">mdef</a>),</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                       <span class="keyword">sizeof</span>(**h-&gt;frame_entries));</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;fsg_history_free(<a class="code" href="structfsg__history__s.html">fsg_history_t</a> *h)</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;{</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    int32 s, lc, ns, np;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    gnode_t *gn;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structgnode__s.html">gnode_t</a> *gn;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (h-&gt;fsg) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        ns = fsg_model_n_state(h-&gt;fsg);</div>
@@ -169,15 +169,15 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">for</span> (s = 0; s &lt; ns; s++) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">for</span> (lc = 0; lc &lt; np; lc++) {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keywordflow">for</span> (gn = h-&gt;frame_entries[s][lc]; gn; gn = gnode_next(gn)) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    ckd_free(gnode_ptr(gn));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#ace56682f14d84cc456c805d26fd86734">gnode_ptr</a>(gn));</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                glist_free(h-&gt;frame_entries[s][lc]);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#a45380e15d2c33afc554fd60a8828580c">glist_free</a>(h-&gt;frame_entries[s][lc]);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    ckd_free_2d(h-&gt;frame_entries);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a8246c071ac12e98b7e1df9fe6da15aef">ckd_free_2d</a>(h-&gt;frame_entries);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    blkarray_list_free(h-&gt;entries);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    ckd_free(h);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>(h);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
@@ -185,19 +185,19 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;fsg_history_set_fsg(<a class="code" href="structfsg__history__s.html">fsg_history_t</a> *h, fsg_model_t *fsg, <a class="code" href="structdict__t.html">dict_t</a> *dict)</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">if</span> (blkarray_list_n_valid(h-&gt;entries) != 0) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        E_WARN(<span class="stringliteral">&quot;Switching FSG while history not empty; history cleared\n&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#a6a794bec721b555ac1f2167f9e12f662">E_WARN</a>(<span class="stringliteral">&quot;Switching FSG while history not empty; history cleared\n&quot;</span>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        blkarray_list_reset(h-&gt;entries);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (h-&gt;frame_entries)</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        ckd_free_2d((<span class="keywordtype">void</span> **) h-&gt;frame_entries);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a8246c071ac12e98b7e1df9fe6da15aef">ckd_free_2d</a>((<span class="keywordtype">void</span> **) h-&gt;frame_entries);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    h-&gt;frame_entries = NULL;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    h-&gt;fsg = fsg;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (fsg &amp;&amp; dict) {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        h-&gt;n_ciphone = bin_mdef_n_ciphone(dict-&gt;<a class="code" href="structdict__t.html#a3a01eb5a3ebda5652d434be26e0cfdd2">mdef</a>);</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        h-&gt;frame_entries =</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            (glist_t **) ckd_calloc_2d(fsg_model_n_state(fsg),</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            (glist_t **) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a949e7b50fcd9697b1563fa57f50e9c4f">ckd_calloc_2d</a>(fsg_model_n_state(fsg),</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                       bin_mdef_n_ciphone(dict-&gt;<a class="code" href="structdict__t.html#a3a01eb5a3ebda5652d434be26e0cfdd2">mdef</a>),</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                       <span class="keyword">sizeof</span>(glist_t));</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
@@ -212,12 +212,12 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;{</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *entry, *new_entry;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    int32 s;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    gnode_t *gn, *prev_gn;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structgnode__s.html">gnode_t</a> *gn, *prev_gn;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">/* Skip the optimization for the initial dummy entries; always enter them */</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span> (frame &lt; 0) {</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        new_entry =</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) ckd_calloc(1, <span class="keyword">sizeof</span>(<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a>));</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a>));</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        new_entry-&gt;fsglink = link;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        new_entry-&gt;frame = frame;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        new_entry-&gt;score = score;</div>
@@ -234,7 +234,7 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">/* Locate where this entry should be inserted in frame_entries[s][lc] */</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    prev_gn = NULL;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="keywordflow">for</span> (gn = h-&gt;frame_entries[s][lc]; gn; gn = gnode_next(gn)) {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        entry = (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) gnode_ptr(gn);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        entry = (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#ace56682f14d84cc456c805d26fd86734">gnode_ptr</a>(gn);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span> (score <a class="code" href="hmm_8h.html#a2874ab52613ff781c96f570ec0eb0d98">BETTER_THAN</a> entry-&gt;score)</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">break</span>;              <span class="comment">/* Found where to insert new entry */</span></div>
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">/* Create new entry after prev_gn (if prev_gn is NULL, at head) */</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    new_entry =</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) ckd_calloc(1, <span class="keyword">sizeof</span>(<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a>));</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a>(1, <span class="keyword">sizeof</span>(<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a>));</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    new_entry-&gt;fsglink = link;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    new_entry-&gt;frame = frame;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    new_entry-&gt;score = score;</div>
@@ -257,24 +257,24 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    new_entry-&gt;rc = rc;         <span class="comment">/* Note: rc set must be non-empty at this point */</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (!prev_gn) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        h-&gt;frame_entries[s][lc] = glist_add_ptr(h-&gt;frame_entries[s][lc],</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        h-&gt;frame_entries[s][lc] = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#a77a9c20b7df5a289477af405ab778377">glist_add_ptr</a>(h-&gt;frame_entries[s][lc],</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                                                (<span class="keywordtype">void</span> *) new_entry);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        prev_gn = h-&gt;frame_entries[s][lc];</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        prev_gn = glist_insert_ptr(prev_gn, (<span class="keywordtype">void</span> *) new_entry);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        prev_gn = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#a2d641da6b349c1c939e3b954382513ba">glist_insert_ptr</a>(prev_gn, (<span class="keywordtype">void</span> *) new_entry);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">/*</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">     * Update the rc set of all the remaining entries in the list.  At this</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">     * point, gn is the entry, if any, immediately following new entry.</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">     */</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">while</span> (gn) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        entry = (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) gnode_ptr(gn);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        entry = (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#ace56682f14d84cc456c805d26fd86734">gnode_ptr</a>(gn);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keywordflow">if</span> (FSG_PNODE_CTXT_SUB(&amp;(entry-&gt;rc), &amp;rc) == 0) {</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="comment">/* rc set of entry reduced to 0; can prune this entry */</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            ckd_free((<span class="keywordtype">void</span> *) entry);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            gn = gnode_free(gn, prev_gn);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a>((<span class="keywordtype">void</span> *) entry);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            gn = <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#a68b51aea4de463b284a19668a713d502">gnode_free</a>(gn, prev_gn);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            prev_gn = gn;</div>
@@ -292,7 +292,7 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;fsg_history_end_frame(<a class="code" href="structfsg__history__s.html">fsg_history_t</a> * h)</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;{</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    int32 s, lc, ns, np;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    gnode_t *gn;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structgnode__s.html">gnode_t</a> *gn;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *entry;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    ns = fsg_model_n_state(h-&gt;fsg);</div>
@@ -301,11 +301,11 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">for</span> (s = 0; s &lt; ns; s++) {</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordflow">for</span> (lc = 0; lc &lt; np; lc++) {</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">for</span> (gn = h-&gt;frame_entries[s][lc]; gn; gn = gnode_next(gn)) {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                entry = (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) gnode_ptr(gn);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                entry = (<a class="code" href="structfsg__hist__entry__s.html">fsg_hist_entry_t</a> *) <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#ace56682f14d84cc456c805d26fd86734">gnode_ptr</a>(gn);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                blkarray_list_append(h-&gt;entries, (<span class="keywordtype">void</span> *) entry);</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            glist_free(h-&gt;frame_entries[s][lc]);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/glist_8h.html#a45380e15d2c33afc554fd60a8828580c">glist_free</a>(h-&gt;frame_entries[s][lc]);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            h-&gt;frame_entries[s][lc] = NULL;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
@@ -396,19 +396,33 @@ $(document).ready(function(){initNavTree('fsg__history_8c_source.html','');});
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;}</div>
 <div class="ttc" id="structfsg__pnode__ctxt__t_html"><div class="ttname"><a href="structfsg__pnode__ctxt__t.html">fsg_pnode_ctxt_t</a></div><div class="ttdef"><b>Definition:</b> <a href="fsg__lextree_8h_source.html#l00096">fsg_lextree.h:96</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_a949e7b50fcd9697b1563fa57f50e9c4f"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#a949e7b50fcd9697b1563fa57f50e9c4f">ckd_calloc_2d</a></div><div class="ttdeci">#define ckd_calloc_2d(d1, d2, sz)</div></div>
 <div class="ttc" id="structfsg__hist__entry__s_html"><div class="ttname"><a href="structfsg__hist__entry__s.html">fsg_hist_entry_s</a></div><div class="ttdef"><b>Definition:</b> <a href="fsg__history_8h_source.html#l00095">fsg_history.h:95</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_aa00ef21903bc4f8a972488417adc8d2e"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#aa00ef21903bc4f8a972488417adc8d2e">ckd_calloc</a></div><div class="ttdeci">#define ckd_calloc(n, sz)</div></div>
 <div class="ttc" id="structblkarray__list__s_html"><div class="ttname"><a href="structblkarray__list__s.html">blkarray_list_s</a></div><div class="ttdef"><b>Definition:</b> <a href="blkarray__list_8h_source.html#l00079">blkarray_list.h:79</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html">ckd_alloc.h</a></div></div>
+<div class="ttc" id="structgnode__s_html"><div class="ttname"><a href="../sphinxbase/structgnode__s.html">gnode_s</a></div></div>
+<div class="ttc" id="prim__type_8h_html"><div class="ttname"><a href="../sphinxbase/prim__type_8h.html">prim_type.h</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_a31c6b405558620ac37599737b5722fbf"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#a31c6b405558620ac37599737b5722fbf">ckd_free</a></div><div class="ttdeci">SPHINXBASE_EXPORT void ckd_free(void *ptr)</div></div>
+<div class="ttc" id="glist_8h_html_a77a9c20b7df5a289477af405ab778377"><div class="ttname"><a href="../sphinxbase/glist_8h.html#a77a9c20b7df5a289477af405ab778377">glist_add_ptr</a></div><div class="ttdeci">SPHINXBASE_EXPORT glist_t glist_add_ptr(glist_t g, void *ptr)</div></div>
+<div class="ttc" id="err_8h_html_a6a794bec721b555ac1f2167f9e12f662"><div class="ttname"><a href="../sphinxbase/err_8h.html#a6a794bec721b555ac1f2167f9e12f662">E_WARN</a></div><div class="ttdeci">#define E_WARN</div></div>
+<div class="ttc" id="glist_8h_html_a45380e15d2c33afc554fd60a8828580c"><div class="ttname"><a href="../sphinxbase/glist_8h.html#a45380e15d2c33afc554fd60a8828580c">glist_free</a></div><div class="ttdeci">SPHINXBASE_EXPORT void glist_free(glist_t g)</div></div>
+<div class="ttc" id="glist_8h_html_a68b51aea4de463b284a19668a713d502"><div class="ttname"><a href="../sphinxbase/glist_8h.html#a68b51aea4de463b284a19668a713d502">gnode_free</a></div><div class="ttdeci">SPHINXBASE_EXPORT gnode_t * gnode_free(gnode_t *gn, gnode_t *pred)</div></div>
+<div class="ttc" id="glist_8h_html_ace56682f14d84cc456c805d26fd86734"><div class="ttname"><a href="../sphinxbase/glist_8h.html#ace56682f14d84cc456c805d26fd86734">gnode_ptr</a></div><div class="ttdeci">#define gnode_ptr(g)</div></div>
 <div class="ttc" id="structfsg__history__s_html"><div class="ttname"><a href="structfsg__history__s.html">fsg_history_s</a></div><div class="ttdef"><b>Definition:</b> <a href="fsg__history_8h_source.html#l00143">fsg_history.h:143</a></div></div>
+<div class="ttc" id="err_8h_html"><div class="ttname"><a href="../sphinxbase/err_8h.html">err.h</a></div></div>
 <div class="ttc" id="structdict__t_html"><div class="ttname"><a href="structdict__t.html">dict_t</a></div><div class="ttdoc">a structure for a dictionary. </div><div class="ttdef"><b>Definition:</b> <a href="dict_8h_source.html#l00079">dict.h:79</a></div></div>
 <div class="ttc" id="hmm_8h_html_a2874ab52613ff781c96f570ec0eb0d98"><div class="ttname"><a href="hmm_8h.html#a2874ab52613ff781c96f570ec0eb0d98">BETTER_THAN</a></div><div class="ttdeci">#define BETTER_THAN</div><div class="ttdoc">Is one score better than another? </div><div class="ttdef"><b>Definition:</b> <a href="hmm_8h_source.html#l00099">hmm.h:99</a></div></div>
+<div class="ttc" id="ckd__alloc_8h_html_a8246c071ac12e98b7e1df9fe6da15aef"><div class="ttname"><a href="../sphinxbase/ckd__alloc_8h.html#a8246c071ac12e98b7e1df9fe6da15aef">ckd_free_2d</a></div><div class="ttdeci">SPHINXBASE_EXPORT void ckd_free_2d(void *ptr)</div></div>
 <div class="ttc" id="structdict__t_html_a3a01eb5a3ebda5652d434be26e0cfdd2"><div class="ttname"><a href="structdict__t.html#a3a01eb5a3ebda5652d434be26e0cfdd2">dict_t::mdef</a></div><div class="ttdeci">bin_mdef_t * mdef</div><div class="ttdoc">Model definition used for phone IDs; NULL if none used. </div><div class="ttdef"><b>Definition:</b> <a href="dict_8h_source.html#l00081">dict.h:81</a></div></div>
+<div class="ttc" id="glist_8h_html_a2d641da6b349c1c939e3b954382513ba"><div class="ttname"><a href="../sphinxbase/glist_8h.html#a2d641da6b349c1c939e3b954382513ba">glist_insert_ptr</a></div><div class="ttdeci">SPHINXBASE_EXPORT gnode_t * glist_insert_ptr(gnode_t *gn, void *ptr)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><b>fsg_history.c</b></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:33 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:58 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

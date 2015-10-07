@@ -147,9 +147,9 @@ $(document).ready(function(){initNavTree('ms__mgau_8h_source.html','');});
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LIBFBS_MS_CONT_MGAU_H_</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">/* SphinxBase headers. */</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/cmd_ln.h&gt;</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/logmath.h&gt;</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#include &lt;sphinxbase/feat.h&gt;</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/cmd__ln_8h.html">sphinxbase/cmd_ln.h</a>&gt;</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/logmath_8h.html">sphinxbase/logmath.h</a>&gt;</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/feat_8h.html">sphinxbase/feat.h</a>&gt;</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">/* Local headers. */</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="acmod_8h.html">acmod.h</a>&quot;</span></div>
@@ -164,14 +164,14 @@ $(document).ready(function(){initNavTree('ms__mgau_8h_source.html','');});
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="structms__mgau__model__t.html#a0a67ef79bd74c55734b0944f0d61b668">  118</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structms__mgau__model__t.html#a0a67ef79bd74c55734b0944f0d61b668">topn</a>;      </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="structgauden__dist__t.html">gauden_dist_t</a> ***dist;  </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    uint8 *mgau_active;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    cmd_ln_t *config;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structcmd__ln__t.html">cmd_ln_t</a> *config;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <a class="code" href="structms__mgau__model__t.html">ms_mgau_model_t</a>;  </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#define ms_mgau_gauden(msg) (msg-&gt;g)</span></div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ms_mgau_senone(msg) (msg-&gt;s)</span></div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ms_mgau_topn(msg) (msg-&gt;topn)</span></div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<a class="code" href="structps__mgau__s.html">ps_mgau_t</a>* ms_mgau_init(<a class="code" href="structacmod__s.html">acmod_t</a> *acmod, logmath_t *lmath, <a class="code" href="structbin__mdef__s.html">bin_mdef_t</a> *mdef);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<a class="code" href="structps__mgau__s.html">ps_mgau_t</a>* ms_mgau_init(<a class="code" href="structacmod__s.html">acmod_t</a> *acmod, <a class="codeRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structlogmath__s.html">logmath_t</a> *lmath, <a class="code" href="structbin__mdef__s.html">bin_mdef_t</a> *mdef);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">void</span> ms_mgau_free(<a class="code" href="structps__mgau__s.html">ps_mgau_t</a> *g);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;int32 ms_cont_mgau_frame_eval(<a class="code" href="structps__mgau__s.html">ps_mgau_t</a> * msg,</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                              int16 *senscr,</div>
@@ -185,16 +185,21 @@ $(document).ready(function(){initNavTree('ms__mgau_8h_source.html','');});
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _LIBFBS_MS_CONT_MGAU_H_*/</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="cmd__ln_8h_html"><div class="ttname"><a href="../sphinxbase/cmd__ln_8h.html">cmd_ln.h</a></div></div>
 <div class="ttc" id="ms__senone_8h_html"><div class="ttname"><a href="ms__senone_8h.html">ms_senone.h</a></div><div class="ttdoc">(Sphinx 3.0 specific) multiple streams senones. </div></div>
+<div class="ttc" id="structlogmath__s_html"><div class="ttname"><a href="../sphinxbase/structlogmath__s.html">logmath_s</a></div></div>
 <div class="ttc" id="structgauden__dist__t_html"><div class="ttname"><a href="structgauden__dist__t.html">gauden_dist_t</a></div><div class="ttdoc">Structure to store distance (density) values for a given input observation wrt density values in some...</div><div class="ttdef"><b>Definition:</b> <a href="ms__gauden_8h_source.html#l00074">ms_gauden.h:74</a></div></div>
 <div class="ttc" id="bin__mdef_8h_html"><div class="ttname"><a href="bin__mdef_8h.html">bin_mdef.h</a></div><div class="ttdoc">Binary format model definition files, with support for heterogeneous topologies and variable-size N-p...</div></div>
 <div class="ttc" id="structms__mgau__model__t_html_a91027cdb757280ac557668068e6f1b07"><div class="ttname"><a href="structms__mgau__model__t.html#a91027cdb757280ac557668068e6f1b07">ms_mgau_model_t::g</a></div><div class="ttdeci">gauden_t * g</div><div class="ttdoc">The codebook. </div><div class="ttdef"><b>Definition:</b> <a href="ms__mgau_8h_source.html#l00116">ms_mgau.h:116</a></div></div>
 <div class="ttc" id="structsenone__t_html"><div class="ttname"><a href="structsenone__t.html">senone_t</a></div><div class="ttdoc">8-bit senone PDF structure. </div><div class="ttdef"><b>Definition:</b> <a href="ms__senone_8h_source.html#l00147">ms_senone.h:147</a></div></div>
 <div class="ttc" id="structbin__mdef__s_html"><div class="ttname"><a href="structbin__mdef__s.html">bin_mdef_s</a></div><div class="ttdef"><b>Definition:</b> <a href="bin__mdef_8h_source.html#l00120">bin_mdef.h:120</a></div></div>
 <div class="ttc" id="structms__mgau__model__t_html_a0a67ef79bd74c55734b0944f0d61b668"><div class="ttname"><a href="structms__mgau__model__t.html#a0a67ef79bd74c55734b0944f0d61b668">ms_mgau_model_t::topn</a></div><div class="ttdeci">int topn</div><div class="ttdoc">Top-n gaussian will be computed. </div><div class="ttdef"><b>Definition:</b> <a href="ms__mgau_8h_source.html#l00118">ms_mgau.h:118</a></div></div>
+<div class="ttc" id="feat_8h_html"><div class="ttname"><a href="../sphinxbase/feat_8h.html">feat.h</a></div></div>
 <div class="ttc" id="ms__gauden_8h_html"><div class="ttname"><a href="ms__gauden_8h.html">ms_gauden.h</a></div><div class="ttdoc">(Sphinx 3.0 specific) Gaussian density module. </div></div>
 <div class="ttc" id="structps__mllr__s_html"><div class="ttname"><a href="structps__mllr__s.html">ps_mllr_s</a></div><div class="ttdoc">Feature space linear transform structure. </div><div class="ttdef"><b>Definition:</b> <a href="acmod_8h_source.html#l00082">acmod.h:82</a></div></div>
+<div class="ttc" id="structcmd__ln__t_html"><div class="ttname"><a href="../sphinxbase/structcmd__ln__t.html">cmd_ln_t</a></div></div>
 <div class="ttc" id="structgauden__t_html"><div class="ttname"><a href="structgauden__t.html">gauden_t</a></div><div class="ttdoc">Multivariate gaussian mixture density parameters. </div><div class="ttdef"><b>Definition:</b> <a href="ms__gauden_8h_source.html#l00085">ms_gauden.h:85</a></div></div>
+<div class="ttc" id="logmath_8h_html"><div class="ttname"><a href="../sphinxbase/logmath_8h.html">logmath.h</a></div></div>
 <div class="ttc" id="acmod_8h_html"><div class="ttname"><a href="acmod_8h.html">acmod.h</a></div><div class="ttdoc">Acoustic model structures for PocketSphinx. </div></div>
 <div class="ttc" id="structms__mgau__model__t_html"><div class="ttname"><a href="structms__mgau__model__t.html">ms_mgau_model_t</a></div><div class="ttdef"><b>Definition:</b> <a href="ms__mgau_8h_source.html#l00114">ms_mgau.h:114</a></div></div>
 <div class="ttc" id="structacmod__s_html"><div class="ttname"><a href="structacmod__s.html">acmod_s</a></div><div class="ttdoc">Acoustic model structure. </div><div class="ttdef"><b>Definition:</b> <a href="acmod_8h_source.html#l00148">acmod.h:148</a></div></div>
@@ -206,7 +211,7 @@ $(document).ready(function(){initNavTree('ms__mgau_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="ms__mgau_8h.html">ms_mgau.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:33 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

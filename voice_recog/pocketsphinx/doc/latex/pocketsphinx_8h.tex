@@ -31,29 +31,29 @@ typedef struct {\bf ps\-\_\-seg\-\_\-s} {\bf ps\-\_\-seg\-\_\-t}\label{pocketsph
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ps\-\_\-decoder\-\_\-t} $\ast$ {\bf ps\-\_\-init} (cmd\-\_\-ln\-\_\-t $\ast$config)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ps\-\_\-decoder\-\_\-t} $\ast$ {\bf ps\-\_\-init} ({\bf cmd\-\_\-ln\-\_\-t} $\ast$config)
 \begin{DoxyCompactList}\small\item\em Initialize the decoder from a configuration object. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T int {\bf ps\-\_\-reinit} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps, cmd\-\_\-ln\-\_\-t $\ast$config)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T int {\bf ps\-\_\-reinit} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps, {\bf cmd\-\_\-ln\-\_\-t} $\ast$config)
 \begin{DoxyCompactList}\small\item\em Reinitialize the decoder with updated configuration. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T arg\-\_\-t const $\ast$ {\bf ps\-\_\-args} (void)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf arg\-\_\-t} const $\ast$ {\bf ps\-\_\-args} (void)
 \begin{DoxyCompactList}\small\item\em Returns the argument definitions used in \doxyref{ps\-\_\-init()}{p.}{pocketsphinx_8h_ad033da98d0f7785d6ab89a41dac3cc7c}. \end{DoxyCompactList}\item 
 P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ps\-\_\-decoder\-\_\-t} $\ast$ {\bf ps\-\_\-retain} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Retain a pointer to the decoder. \end{DoxyCompactList}\item 
 P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T int {\bf ps\-\_\-free} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Finalize the decoder. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T cmd\-\_\-ln\-\_\-t $\ast$ {\bf ps\-\_\-get\-\_\-config} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf cmd\-\_\-ln\-\_\-t} $\ast$ {\bf ps\-\_\-get\-\_\-config} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Get the configuration object for this decoder. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T logmath\-\_\-t $\ast$ {\bf ps\-\_\-get\-\_\-logmath} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf logmath\-\_\-t} $\ast$ {\bf ps\-\_\-get\-\_\-logmath} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Get the log-\/math computation object for this decoder. \end{DoxyCompactList}\item 
 P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T fe\-\_\-t $\ast$ {\bf ps\-\_\-get\-\_\-fe} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Get the feature extraction object for this decoder. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T feat\-\_\-t $\ast$ {\bf ps\-\_\-get\-\_\-feat} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf feat\-\_\-t} $\ast$ {\bf ps\-\_\-get\-\_\-feat} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Get the dynamic feature computation object for this decoder. \end{DoxyCompactList}\item 
 P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ps\-\_\-mllr\-\_\-t} $\ast$ {\bf ps\-\_\-update\-\_\-mllr} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps, {\bf ps\-\_\-mllr\-\_\-t} $\ast$mllr)
 \begin{DoxyCompactList}\small\item\em Adapt current acoustic model using a linear transform. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T ngram\-\_\-model\-\_\-t $\ast$ {\bf ps\-\_\-get\-\_\-lmset} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ngram\-\_\-model\-\_\-t} $\ast$ {\bf ps\-\_\-get\-\_\-lmset} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Get the language model set object for this decoder. \end{DoxyCompactList}\item 
-P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T ngram\-\_\-model\-\_\-t $\ast$ {\bf ps\-\_\-update\-\_\-lmset} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps, ngram\-\_\-model\-\_\-t $\ast$lmset)
+P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ngram\-\_\-model\-\_\-t} $\ast$ {\bf ps\-\_\-update\-\_\-lmset} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps, {\bf ngram\-\_\-model\-\_\-t} $\ast$lmset)
 \begin{DoxyCompactList}\small\item\em Update the language model set object for this decoder. \end{DoxyCompactList}\item 
 P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf fsg\-\_\-set\-\_\-t} $\ast$ {\bf ps\-\_\-get\-\_\-fsgset} ({\bf ps\-\_\-decoder\-\_\-t} $\ast$ps)
 \begin{DoxyCompactList}\small\item\em Get the finite-\/state grammar set object for this decoder. \end{DoxyCompactList}\item 
@@ -160,11 +160,11 @@ Definition at line 519 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, bin\-\_\-mdef\-\_\-ciphone\-\_\-id(), ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-add\-\_\-word(), dict\-\_\-add\-\_\-word(), acmod\-\_\-s\-::mdef, ps\-\_\-get\-\_\-lmset(), and ps\-\_\-decoder\-\_\-s\-::search.
+References ps\-\_\-decoder\-\_\-s\-::acmod, bin\-\_\-mdef\-\_\-ciphone\-\_\-id(), ckd\-\_\-calloc, ckd\-\_\-free(), ckd\-\_\-salloc, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-add\-\_\-word(), dict\-\_\-add\-\_\-word(), E\-\_\-\-E\-R\-R\-O\-R, acmod\-\_\-s\-::mdef, N\-G\-R\-A\-M\-\_\-\-I\-N\-V\-A\-L\-I\-D\-\_\-\-W\-I\-D, ngram\-\_\-model\-\_\-add\-\_\-word(), ps\-\_\-get\-\_\-lmset(), ps\-\_\-decoder\-\_\-s\-::search, and str2words().
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-args@{ps\-\_\-args}}
 \index{ps\-\_\-args@{ps\-\_\-args}!pocketsphinx.h@{pocketsphinx.\-h}}
-\subsubsection[{ps\-\_\-args}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T arg\-\_\-t const$\ast$ ps\-\_\-args (
+\subsubsection[{ps\-\_\-args}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf arg\-\_\-t} const$\ast$ ps\-\_\-args (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -217,7 +217,7 @@ Definition at line 580 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-end\-\_\-utt(), ps\-\_\-process\-\_\-raw(), and ps\-\_\-start\-\_\-utt().
+References ckd\-\_\-calloc, ckd\-\_\-free(), ps\-\_\-end\-\_\-utt(), ps\-\_\-process\-\_\-raw(), and ps\-\_\-start\-\_\-utt().
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-decode\-\_\-senscr@{ps\-\_\-decode\-\_\-senscr}}
 \index{ps\-\_\-decode\-\_\-senscr@{ps\-\_\-decode\-\_\-senscr}!pocketsphinx.h@{pocketsphinx.\-h}}
@@ -277,7 +277,7 @@ Definition at line 815 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-end\-\_\-utt(), ps\-\_\-decoder\-\_\-s\-::config, acmod\-\_\-s\-::output\-\_\-frame, ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-decoder\-\_\-s\-::pl\-\_\-window, ps\-\_\-get\-\_\-hyp(), ps\-\_\-get\-\_\-logmath(), ps\-\_\-seg\-\_\-frames(), ps\-\_\-seg\-\_\-iter(), ps\-\_\-seg\-\_\-next(), ps\-\_\-seg\-\_\-prob(), ps\-\_\-seg\-\_\-word(), and ps\-\_\-decoder\-\_\-s\-::search.
+References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-end\-\_\-utt(), cmd\-\_\-ln\-\_\-boolean\-\_\-r, ps\-\_\-decoder\-\_\-s\-::config, E\-\_\-\-I\-N\-F\-O, E\-\_\-\-I\-N\-F\-O\-\_\-\-N\-O\-F\-N, logmath\-\_\-exp(), acmod\-\_\-s\-::output\-\_\-frame, ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-decoder\-\_\-s\-::pl\-\_\-window, ps\-\_\-get\-\_\-hyp(), ps\-\_\-get\-\_\-logmath(), ps\-\_\-seg\-\_\-frames(), ps\-\_\-seg\-\_\-iter(), ps\-\_\-seg\-\_\-next(), ps\-\_\-seg\-\_\-prob(), ps\-\_\-seg\-\_\-word(), ptmr\-\_\-stop(), and ps\-\_\-decoder\-\_\-s\-::search.
 
 
 
@@ -310,7 +310,7 @@ Definition at line 326 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-free(), ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-free(), dict\-\_\-free(), ps\-\_\-decoder\-\_\-s\-::lmath, ps\-\_\-decoder\-\_\-s\-::refcount, and ps\-\_\-decoder\-\_\-s\-::uttid.
+References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-free(), ckd\-\_\-free(), cmd\-\_\-ln\-\_\-free\-\_\-r(), ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-free(), dict\-\_\-free(), ps\-\_\-decoder\-\_\-s\-::lmath, logmath\-\_\-free(), ps\-\_\-decoder\-\_\-s\-::refcount, and ps\-\_\-decoder\-\_\-s\-::uttid.
 
 
 
@@ -347,11 +347,11 @@ Definition at line 1051 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::n\-\_\-frame, and ps\-\_\-decoder\-\_\-s\-::perf.
+References ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::n\-\_\-frame, ps\-\_\-decoder\-\_\-s\-::perf, ptmr\-\_\-t\-::t\-\_\-tot\-\_\-cpu, and ptmr\-\_\-t\-::t\-\_\-tot\-\_\-elapsed.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-config@{ps\-\_\-get\-\_\-config}}
 \index{ps\-\_\-get\-\_\-config@{ps\-\_\-get\-\_\-config}!pocketsphinx.h@{pocketsphinx.\-h}}
-\subsubsection[{ps\-\_\-get\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T cmd\-\_\-ln\-\_\-t$\ast$ ps\-\_\-get\-\_\-config (
+\subsubsection[{ps\-\_\-get\-\_\-config}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf cmd\-\_\-ln\-\_\-t}$\ast$ ps\-\_\-get\-\_\-config (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-decoder\-\_\-t} $\ast$}]{ps}
 \end{DoxyParamCaption}
@@ -361,7 +361,7 @@ References ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::n\-\_\-fr
 Get the configuration object for this decoder. 
 
 \begin{DoxyReturn}{Returns}
-The configuration object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use cmd\-\_\-ln\-\_\-retain() if you wish to reuse it elsewhere. 
+The configuration object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use {\bf cmd\-\_\-ln\-\_\-retain()} if you wish to reuse it elsewhere. 
 \end{DoxyReturn}
 
 
@@ -395,7 +395,7 @@ References ps\-\_\-decoder\-\_\-s\-::acmod, and acmod\-\_\-s\-::fe.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-feat@{ps\-\_\-get\-\_\-feat}}
 \index{ps\-\_\-get\-\_\-feat@{ps\-\_\-get\-\_\-feat}!pocketsphinx.h@{pocketsphinx.\-h}}
-\subsubsection[{ps\-\_\-get\-\_\-feat}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T feat\-\_\-t$\ast$ ps\-\_\-get\-\_\-feat (
+\subsubsection[{ps\-\_\-get\-\_\-feat}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf feat\-\_\-t}$\ast$ ps\-\_\-get\-\_\-feat (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-decoder\-\_\-t} $\ast$}]{ps}
 \end{DoxyParamCaption}
@@ -405,7 +405,7 @@ References ps\-\_\-decoder\-\_\-s\-::acmod, and acmod\-\_\-s\-::fe.
 Get the dynamic feature computation object for this decoder. 
 
 \begin{DoxyReturn}{Returns}
-The dynamic feature computation object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use feat\-\_\-retain() if you wish to reuse it elsewhere. 
+The dynamic feature computation object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use {\bf feat\-\_\-retain()} if you wish to reuse it elsewhere. 
 \end{DoxyReturn}
 
 
@@ -470,7 +470,7 @@ Definition at line 871 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::uttid.
+References ps\-\_\-decoder\-\_\-s\-::perf, ptmr\-\_\-start(), ptmr\-\_\-stop(), ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::uttid.
 
 
 
@@ -504,7 +504,7 @@ Definition at line 884 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::perf, and ps\-\_\-decoder\-\_\-s\-::search.
+References ps\-\_\-decoder\-\_\-s\-::perf, ptmr\-\_\-start(), ptmr\-\_\-stop(), and ps\-\_\-decoder\-\_\-s\-::search.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-lattice@{ps\-\_\-get\-\_\-lattice}}
 \index{ps\-\_\-get\-\_\-lattice@{ps\-\_\-get\-\_\-lattice}!pocketsphinx.h@{pocketsphinx.\-h}}
@@ -541,7 +541,7 @@ Referenced by ps\-\_\-nbest().
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-lmset@{ps\-\_\-get\-\_\-lmset}}
 \index{ps\-\_\-get\-\_\-lmset@{ps\-\_\-get\-\_\-lmset}!pocketsphinx.h@{pocketsphinx.\-h}}
-\subsubsection[{ps\-\_\-get\-\_\-lmset}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T ngram\-\_\-model\-\_\-t$\ast$ ps\-\_\-get\-\_\-lmset (
+\subsubsection[{ps\-\_\-get\-\_\-lmset}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ngram\-\_\-model\-\_\-t}$\ast$ ps\-\_\-get\-\_\-lmset (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-decoder\-\_\-t} $\ast$}]{ps}
 \end{DoxyParamCaption}
@@ -553,7 +553,7 @@ Get the language model set object for this decoder.
 If N-\/\-Gram decoding is not enabled, this will return N\-U\-L\-L. You will need to enable it using \doxyref{ps\-\_\-update\-\_\-lmset()}{p.}{pocketsphinx_8h_ae00bebeadaa6fc6fa8eb93b450651dc5}.
 
 \begin{DoxyReturn}{Returns}
-The language model set object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use ngram\-\_\-model\-\_\-retain() if you wish to reuse it elsewhere. 
+The language model set object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use {\bf ngram\-\_\-model\-\_\-retain()} if you wish to reuse it elsewhere. 
 \end{DoxyReturn}
 
 
@@ -569,7 +569,7 @@ Referenced by ps\-\_\-add\-\_\-word().
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-logmath@{ps\-\_\-get\-\_\-logmath}}
 \index{ps\-\_\-get\-\_\-logmath@{ps\-\_\-get\-\_\-logmath}!pocketsphinx.h@{pocketsphinx.\-h}}
-\subsubsection[{ps\-\_\-get\-\_\-logmath}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T logmath\-\_\-t$\ast$ ps\-\_\-get\-\_\-logmath (
+\subsubsection[{ps\-\_\-get\-\_\-logmath}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf logmath\-\_\-t}$\ast$ ps\-\_\-get\-\_\-logmath (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-decoder\-\_\-t} $\ast$}]{ps}
 \end{DoxyParamCaption}
@@ -579,7 +579,7 @@ Referenced by ps\-\_\-add\-\_\-word().
 Get the log-\/math computation object for this decoder. 
 
 \begin{DoxyReturn}{Returns}
-The log-\/math object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use logmath\-\_\-retain() if you wish to reuse it elsewhere. 
+The log-\/math object for this decoder. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use {\bf logmath\-\_\-retain()} if you wish to reuse it elsewhere. 
 \end{DoxyReturn}
 
 
@@ -653,7 +653,7 @@ Definition at line 896 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::uttid.
+References ps\-\_\-decoder\-\_\-s\-::perf, ptmr\-\_\-start(), ptmr\-\_\-stop(), ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::uttid.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-utt\-\_\-time@{ps\-\_\-get\-\_\-utt\-\_\-time}}
 \index{ps\-\_\-get\-\_\-utt\-\_\-time@{ps\-\_\-get\-\_\-utt\-\_\-time}!pocketsphinx.h@{pocketsphinx.\-h}}
@@ -686,7 +686,7 @@ Definition at line 1039 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, acmod\-\_\-s\-::output\-\_\-frame, and ps\-\_\-decoder\-\_\-s\-::perf.
+References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, acmod\-\_\-s\-::output\-\_\-frame, ps\-\_\-decoder\-\_\-s\-::perf, ptmr\-\_\-t\-::t\-\_\-cpu, and ptmr\-\_\-t\-::t\-\_\-elapsed.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-get\-\_\-uttid@{ps\-\_\-get\-\_\-uttid}}
 \index{ps\-\_\-get\-\_\-uttid@{ps\-\_\-get\-\_\-uttid}!pocketsphinx.h@{pocketsphinx.\-h}}
@@ -719,7 +719,7 @@ References ps\-\_\-decoder\-\_\-s\-::uttid.
 \index{ps\-\_\-init@{ps\-\_\-init}!pocketsphinx.h@{pocketsphinx.\-h}}
 \subsubsection[{ps\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ps\-\_\-decoder\-\_\-t}$\ast$ ps\-\_\-init (
 \begin{DoxyParamCaption}
-\item[{cmd\-\_\-ln\-\_\-t $\ast$}]{config}
+\item[{{\bf cmd\-\_\-ln\-\_\-t} $\ast$}]{config}
 \end{DoxyParamCaption}
 )}\label{pocketsphinx_8h_ad033da98d0f7785d6ab89a41dac3cc7c}
 
@@ -727,11 +727,11 @@ References ps\-\_\-decoder\-\_\-s\-::uttid.
 Initialize the decoder from a configuration object. 
 
 \begin{DoxyNote}{Note}
-The decoder retains ownership of the pointer {\ttfamily config}, so you must not attempt to free it manually. If you wish to reuse it elsewhere, call cmd\-\_\-ln\-\_\-retain() on it.
+The decoder retains ownership of the pointer {\ttfamily config}, so you must not attempt to free it manually. If you wish to reuse it elsewhere, call {\bf cmd\-\_\-ln\-\_\-retain()} on it.
 \end{DoxyNote}
 
 \begin{DoxyParams}{Parameters}
-{\em config} & a command-\/line structure, as created by cmd\-\_\-ln\-\_\-parse\-\_\-r() or cmd\-\_\-ln\-\_\-parse\-\_\-file\-\_\-r(). \\
+{\em config} & a command-\/line structure, as created by {\bf cmd\-\_\-ln\-\_\-parse\-\_\-r()} or {\bf cmd\-\_\-ln\-\_\-parse\-\_\-file\-\_\-r()}. \\
 \hline
 \end{DoxyParams}
 
@@ -740,7 +740,7 @@ Definition at line 299 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-free(), ps\-\_\-reinit(), and ps\-\_\-decoder\-\_\-s\-::refcount.
+References ckd\-\_\-calloc, ps\-\_\-free(), ps\-\_\-reinit(), and ps\-\_\-decoder\-\_\-s\-::refcount.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-load\-\_\-dict@{ps\-\_\-load\-\_\-dict}}
 \index{ps\-\_\-load\-\_\-dict@{ps\-\_\-load\-\_\-dict}!pocketsphinx.h@{pocketsphinx.\-h}}
@@ -773,7 +773,7 @@ Definition at line 457 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-build(), dict2pid\-\_\-free(), dict\-\_\-free(), dict\-\_\-init(), acmod\-\_\-s\-::mdef, ps\-\_\-args(), and ps\-\_\-decoder\-\_\-s\-::searches.
+References ps\-\_\-decoder\-\_\-s\-::acmod, cmd\-\_\-ln\-\_\-boolean\-\_\-r, cmd\-\_\-ln\-\_\-free\-\_\-r(), cmd\-\_\-ln\-\_\-init(), cmd\-\_\-ln\-\_\-set\-\_\-boolean\-\_\-r, cmd\-\_\-ln\-\_\-set\-\_\-str\-\_\-r(), cmd\-\_\-ln\-\_\-str\-\_\-r(), ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-build(), dict2pid\-\_\-free(), dict\-\_\-free(), dict\-\_\-init(), gnode\-\_\-ptr, acmod\-\_\-s\-::mdef, ps\-\_\-args(), and ps\-\_\-decoder\-\_\-s\-::searches.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-nbest@{ps\-\_\-nbest}}
 \index{ps\-\_\-nbest@{ps\-\_\-nbest}!pocketsphinx.h@{pocketsphinx.\-h}}
@@ -991,7 +991,7 @@ Definition at line 748 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, A\-C\-M\-O\-D\-\_\-\-I\-D\-L\-E, acmod\-\_\-process\-\_\-raw(), acmod\-\_\-set\-\_\-grow(), and acmod\-\_\-s\-::state.
+References ps\-\_\-decoder\-\_\-s\-::acmod, A\-C\-M\-O\-D\-\_\-\-I\-D\-L\-E, acmod\-\_\-process\-\_\-raw(), acmod\-\_\-set\-\_\-grow(), E\-\_\-\-E\-R\-R\-O\-R, and acmod\-\_\-s\-::state.
 
 
 
@@ -1002,7 +1002,7 @@ Referenced by ps\-\_\-decode\-\_\-raw().
 \subsubsection[{ps\-\_\-reinit}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T int ps\-\_\-reinit (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-decoder\-\_\-t} $\ast$}]{ps, }
-\item[{cmd\-\_\-ln\-\_\-t $\ast$}]{config}
+\item[{{\bf cmd\-\_\-ln\-\_\-t} $\ast$}]{config}
 \end{DoxyParamCaption}
 )}\label{pocketsphinx_8h_a391679e7edb0de1e324aa302ee820287}
 
@@ -1012,7 +1012,7 @@ Reinitialize the decoder with updated configuration.
 This function allows you to switch the acoustic model, dictionary, or other configuration without creating an entirely new decoding object.
 
 \begin{DoxyNote}{Note}
-The decoder retains ownership of the pointer {\ttfamily config}, so you must not attempt to free it manually. If you wish to reuse it elsewhere, call cmd\-\_\-ln\-\_\-retain() on it.
+The decoder retains ownership of the pointer {\ttfamily config}, so you must not attempt to free it manually. If you wish to reuse it elsewhere, call {\bf cmd\-\_\-ln\-\_\-retain()} on it.
 \end{DoxyNote}
 
 \begin{DoxyParams}{Parameters}
@@ -1030,7 +1030,7 @@ Definition at line 193 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-free(), acmod\-\_\-init(), acmod\-\_\-set\-\_\-grow(), ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-build(), dict2pid\-\_\-free(), dict\-\_\-free(), dict\-\_\-init(), ps\-\_\-decoder\-\_\-s\-::lmath, acmod\-\_\-s\-::mdef, ps\-\_\-decoder\-\_\-s\-::mfclogdir, ngram\-\_\-search\-\_\-init(), ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-decoder\-\_\-s\-::pl\-\_\-window, ps\-\_\-search\-\_\-s\-::pls, ps\-\_\-decoder\-\_\-s\-::rawlogdir, ps\-\_\-decoder\-\_\-s\-::search, ps\-\_\-decoder\-\_\-s\-::searches, and ps\-\_\-decoder\-\_\-s\-::senlogdir.
+References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-free(), acmod\-\_\-init(), acmod\-\_\-set\-\_\-grow(), cmd\-\_\-ln\-\_\-boolean\-\_\-r, cmd\-\_\-ln\-\_\-free\-\_\-r(), cmd\-\_\-ln\-\_\-retain(), cmd\-\_\-ln\-\_\-str\-\_\-r(), ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, dict2pid\-\_\-build(), dict2pid\-\_\-free(), dict\-\_\-free(), dict\-\_\-init(), err\-\_\-set\-\_\-debug\-\_\-level(), glist\-\_\-add\-\_\-ptr(), ps\-\_\-decoder\-\_\-s\-::lmath, logmath\-\_\-free(), logmath\-\_\-get\-\_\-base(), logmath\-\_\-init(), acmod\-\_\-s\-::mdef, ps\-\_\-decoder\-\_\-s\-::mfclogdir, ptmr\-\_\-t\-::name, ngram\-\_\-search\-\_\-init(), ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-decoder\-\_\-s\-::pl\-\_\-window, ps\-\_\-search\-\_\-s\-::pls, ptmr\-\_\-init(), ps\-\_\-decoder\-\_\-s\-::rawlogdir, ps\-\_\-decoder\-\_\-s\-::search, ps\-\_\-decoder\-\_\-s\-::searches, and ps\-\_\-decoder\-\_\-s\-::senlogdir.
 
 
 
@@ -1155,7 +1155,7 @@ Definition at line 909 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::perf, and ps\-\_\-decoder\-\_\-s\-::search.
+References ps\-\_\-decoder\-\_\-s\-::perf, ptmr\-\_\-start(), ptmr\-\_\-stop(), and ps\-\_\-decoder\-\_\-s\-::search.
 
 
 
@@ -1290,7 +1290,7 @@ Definition at line 620 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-set\-\_\-mfcfh(), acmod\-\_\-set\-\_\-rawfh(), acmod\-\_\-set\-\_\-senfh(), acmod\-\_\-start\-\_\-utt(), ps\-\_\-search\-\_\-s\-::dag, ps\-\_\-search\-\_\-s\-::hyp\-\_\-str, ps\-\_\-search\-\_\-s\-::last\-\_\-link, ps\-\_\-decoder\-\_\-s\-::mfclogdir, ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-search\-\_\-s\-::post, ps\-\_\-lattice\-\_\-free(), ps\-\_\-decoder\-\_\-s\-::rawlogdir, ps\-\_\-decoder\-\_\-s\-::search, ps\-\_\-decoder\-\_\-s\-::senlogdir, ps\-\_\-decoder\-\_\-s\-::uttid, and ps\-\_\-decoder\-\_\-s\-::uttno.
+References ps\-\_\-decoder\-\_\-s\-::acmod, acmod\-\_\-set\-\_\-mfcfh(), acmod\-\_\-set\-\_\-rawfh(), acmod\-\_\-set\-\_\-senfh(), acmod\-\_\-start\-\_\-utt(), ckd\-\_\-free(), ckd\-\_\-salloc, ps\-\_\-search\-\_\-s\-::dag, E\-\_\-\-E\-R\-R\-O\-R, E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-Y\-S\-T\-E\-M, E\-\_\-\-I\-N\-F\-O, ps\-\_\-search\-\_\-s\-::hyp\-\_\-str, ps\-\_\-search\-\_\-s\-::last\-\_\-link, ps\-\_\-decoder\-\_\-s\-::mfclogdir, ps\-\_\-decoder\-\_\-s\-::perf, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-search\-\_\-s\-::post, ps\-\_\-lattice\-\_\-free(), ptmr\-\_\-reset(), ptmr\-\_\-start(), ps\-\_\-decoder\-\_\-s\-::rawlogdir, ps\-\_\-decoder\-\_\-s\-::search, ps\-\_\-decoder\-\_\-s\-::senlogdir, string\-\_\-join(), ps\-\_\-decoder\-\_\-s\-::uttid, and ps\-\_\-decoder\-\_\-s\-::uttno.
 
 
 
@@ -1318,14 +1318,14 @@ Definition at line 432 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-search\-\_\-s\-::pls, ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::searches.
+References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, glist\-\_\-add\-\_\-ptr(), ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-search\-\_\-s\-::pls, ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::searches.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-update\-\_\-lmset@{ps\-\_\-update\-\_\-lmset}}
 \index{ps\-\_\-update\-\_\-lmset@{ps\-\_\-update\-\_\-lmset}!pocketsphinx.h@{pocketsphinx.\-h}}
-\subsubsection[{ps\-\_\-update\-\_\-lmset}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T ngram\-\_\-model\-\_\-t$\ast$ ps\-\_\-update\-\_\-lmset (
+\subsubsection[{ps\-\_\-update\-\_\-lmset}]{\setlength{\rightskip}{0pt plus 5cm}P\-O\-C\-K\-E\-T\-S\-P\-H\-I\-N\-X\-\_\-\-E\-X\-P\-O\-R\-T {\bf ngram\-\_\-model\-\_\-t}$\ast$ ps\-\_\-update\-\_\-lmset (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-decoder\-\_\-t} $\ast$}]{ps, }
-\item[{ngram\-\_\-model\-\_\-t $\ast$}]{lmset}
+\item[{{\bf ngram\-\_\-model\-\_\-t} $\ast$}]{lmset}
 \end{DoxyParamCaption}
 )}\label{pocketsphinx_8h_ae00bebeadaa6fc6fa8eb93b450651dc5}
 
@@ -1336,7 +1336,7 @@ This function does several things. Most importantly, it enables N-\/\-Gram decod
 
 
 \begin{DoxyParams}{Parameters}
-{\em lmset} & The new lmset to use, or N\-U\-L\-L to update the existing lmset. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use ngram\-\_\-model\-\_\-retain() if you wish to reuse it elsewhere. \\
+{\em lmset} & The new lmset to use, or N\-U\-L\-L to update the existing lmset. The decoder retains ownership of this pointer, so you should not attempt to free it manually. Use {\bf ngram\-\_\-model\-\_\-retain()} if you wish to reuse it elsewhere. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -1348,7 +1348,7 @@ Definition at line 389 of file pocketsphinx.\-c.
 
 
 
-References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, ngram\-\_\-search\-\_\-s\-::lmset, ngram\-\_\-search\-\_\-init(), ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-search\-\_\-s\-::pls, ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::searches.
+References ps\-\_\-decoder\-\_\-s\-::acmod, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::d2p, ps\-\_\-decoder\-\_\-s\-::dict, glist\-\_\-add\-\_\-ptr(), ngram\-\_\-search\-\_\-s\-::lmset, ngram\-\_\-model\-\_\-free(), ngram\-\_\-search\-\_\-init(), ps\-\_\-decoder\-\_\-s\-::phone\-\_\-loop, ps\-\_\-search\-\_\-s\-::pls, ps\-\_\-decoder\-\_\-s\-::search, and ps\-\_\-decoder\-\_\-s\-::searches.
 
 \index{pocketsphinx.\-h@{pocketsphinx.\-h}!ps\-\_\-update\-\_\-mllr@{ps\-\_\-update\-\_\-mllr}}
 \index{ps\-\_\-update\-\_\-mllr@{ps\-\_\-update\-\_\-mllr}!pocketsphinx.h@{pocketsphinx.\-h}}

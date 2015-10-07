@@ -37,13 +37,13 @@ continuous.o: continuous.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /usr/local/include/sphinxbase/err.h /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h \
+ /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/local/include/sphinxbase/sphinxbase_export.h \
- /usr/local/include/sphinxbase/ad.h \
- /usr/local/include/sphinxbase/sphinx_config.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ad.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h \
  /usr/include/pulse/pulseaudio.h /usr/include/pulse/mainloop-api.h \
  /usr/include/pulse/cdecl.h /usr/include/pulse/version.h \
  /usr/include/pulse/sample.h /usr/include/inttypes.h \
@@ -75,25 +75,28 @@ continuous.o: continuous.c /usr/include/stdc-predef.h \
  /usr/include/pulse/mainloop.h /usr/include/pulse/mainloop-signal.h \
  /usr/include/pulse/util.h /usr/include/pulse/timeval.h \
  /usr/include/pulse/rtclock.h /usr/include/pulse/simple.h \
- /usr/local/include/sphinxbase/prim_type.h \
- /usr/local/include/sphinxbase/cont_ad.h ../../include/pocketsphinx.h \
- /usr/local/include/sphinxbase/cmd_ln.h \
- /usr/local/include/sphinxbase/logmath.h \
- /usr/local/include/sphinxbase/fe.h \
- /usr/local/include/sphinxbase/fixpoint.h \
- /usr/local/include/sphinxbase/feat.h /usr/local/include/sphinxbase/cmn.h \
- /usr/local/include/sphinxbase/agc.h \
- /usr/local/include/sphinxbase/ngram_model.h \
- /usr/local/include/sphinxbase/mmio.h ../../include/pocketsphinx_export.h \
- ../../include/cmdln_macro.h ../../include/ps_lattice.h \
- ../../include/ps_mllr.h ../../include/fsg_set.h \
- /usr/local/include/sphinxbase/fsg_model.h \
- /usr/local/include/sphinxbase/glist.h \
- /usr/local/include/sphinxbase/bitvec.h \
- /usr/local/include/sphinxbase/ckd_alloc.h \
- /usr/local/include/sphinxbase/hash_table.h \
- /usr/local/include/sphinxbase/listelem_alloc.h \
- /usr/local/include/sphinxbase/jsgf.h
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cont_ad.h \
+ ../../include/pocketsphinx.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmd_ln.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/logmath.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fe.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fixpoint.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/feat.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmn.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/agc.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ngram_model.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/mmio.h \
+ ../../include/pocketsphinx_export.h ../../include/cmdln_macro.h \
+ ../../include/ps_lattice.h ../../include/ps_mllr.h \
+ ../../include/fsg_set.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fsg_model.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/glist.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/bitvec.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/hash_table.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/listelem_alloc.h \
+ /home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/jsgf.h
 
 /usr/include/stdc-predef.h:
 
@@ -193,7 +196,7 @@ continuous.o: continuous.c /usr/include/stdc-predef.h \
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
-/usr/local/include/sphinxbase/err.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/err.h:
 
 /usr/include/errno.h:
 
@@ -207,11 +210,11 @@ continuous.o: continuous.c /usr/include/stdc-predef.h \
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/local/include/sphinxbase/sphinxbase_export.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/sphinxbase_export.h:
 
-/usr/local/include/sphinxbase/ad.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ad.h:
 
-/usr/local/include/sphinxbase/sphinx_config.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinx_config.h:
 
 /usr/include/pulse/pulseaudio.h:
 
@@ -313,29 +316,29 @@ continuous.o: continuous.c /usr/include/stdc-predef.h \
 
 /usr/include/pulse/simple.h:
 
-/usr/local/include/sphinxbase/prim_type.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/prim_type.h:
 
-/usr/local/include/sphinxbase/cont_ad.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cont_ad.h:
 
 ../../include/pocketsphinx.h:
 
-/usr/local/include/sphinxbase/cmd_ln.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmd_ln.h:
 
-/usr/local/include/sphinxbase/logmath.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/logmath.h:
 
-/usr/local/include/sphinxbase/fe.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fe.h:
 
-/usr/local/include/sphinxbase/fixpoint.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fixpoint.h:
 
-/usr/local/include/sphinxbase/feat.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/feat.h:
 
-/usr/local/include/sphinxbase/cmn.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/cmn.h:
 
-/usr/local/include/sphinxbase/agc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/agc.h:
 
-/usr/local/include/sphinxbase/ngram_model.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ngram_model.h:
 
-/usr/local/include/sphinxbase/mmio.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/mmio.h:
 
 ../../include/pocketsphinx_export.h:
 
@@ -347,16 +350,16 @@ continuous.o: continuous.c /usr/include/stdc-predef.h \
 
 ../../include/fsg_set.h:
 
-/usr/local/include/sphinxbase/fsg_model.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/fsg_model.h:
 
-/usr/local/include/sphinxbase/glist.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/glist.h:
 
-/usr/local/include/sphinxbase/bitvec.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/bitvec.h:
 
-/usr/local/include/sphinxbase/ckd_alloc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/ckd_alloc.h:
 
-/usr/local/include/sphinxbase/hash_table.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/hash_table.h:
 
-/usr/local/include/sphinxbase/listelem_alloc.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/listelem_alloc.h:
 
-/usr/local/include/sphinxbase/jsgf.h:
+/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/pocketsphinx/../sphinxbase/include/sphinxbase/jsgf.h:

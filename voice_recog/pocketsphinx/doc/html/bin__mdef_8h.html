@@ -76,8 +76,8 @@ $(document).ready(function(){initNavTree('bin__mdef_8h.html','');});
 
 <p>Binary format model definition files, with support for heterogeneous topologies and variable-size N-phones.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;sphinxbase/mmio.h&gt;</code><br/>
-<code>#include &lt;sphinxbase/cmd_ln.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/mmio_8h.html">sphinxbase/mmio.h</a>&gt;</code><br/>
+<code>#include &lt;<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/cmd__ln_8h.html">sphinxbase/cmd_ln.h</a>&gt;</code><br/>
 <code>#include &lt;pocketsphinx_export.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="mdef_8h_source.html">mdef.h</a>&quot;</code><br/>
 </div>
@@ -175,11 +175,11 @@ typedef struct <a class="el" href="structbin__mdef__s.html">bin_mdef_s</a>&#160;
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3930ae6b3309a615335585db4b46306f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3930ae6b3309a615335585db4b46306f"></a>
-POCKETSPHINX_EXPORT <a class="el" href="bin__mdef_8h.html#a269082d84ae254593b79f1eafe9b2d12">bin_mdef_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bin__mdef_8h.html#a3930ae6b3309a615335585db4b46306f">bin_mdef_read</a> (cmd_ln_t *config, const char *filename)</td></tr>
+POCKETSPHINX_EXPORT <a class="el" href="bin__mdef_8h.html#a269082d84ae254593b79f1eafe9b2d12">bin_mdef_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bin__mdef_8h.html#a3930ae6b3309a615335585db4b46306f">bin_mdef_read</a> (<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structcmd__ln__t.html">cmd_ln_t</a> *config, const char *filename)</td></tr>
 <tr class="memdesc:a3930ae6b3309a615335585db4b46306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a binary mdef from a file. <br/></td></tr>
 <tr class="separator:a3930ae6b3309a615335585db4b46306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00dab94d45d1adc5f7778fd1e2398031"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00dab94d45d1adc5f7778fd1e2398031"></a>
-POCKETSPHINX_EXPORT <a class="el" href="bin__mdef_8h.html#a269082d84ae254593b79f1eafe9b2d12">bin_mdef_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bin__mdef_8h.html#a00dab94d45d1adc5f7778fd1e2398031">bin_mdef_read_text</a> (cmd_ln_t *config, const char *filename)</td></tr>
+POCKETSPHINX_EXPORT <a class="el" href="bin__mdef_8h.html#a269082d84ae254593b79f1eafe9b2d12">bin_mdef_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="bin__mdef_8h.html#a00dab94d45d1adc5f7778fd1e2398031">bin_mdef_read_text</a> (<a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/structcmd__ln__t.html">cmd_ln_t</a> *config, const char *filename)</td></tr>
 <tr class="memdesc:a00dab94d45d1adc5f7778fd1e2398031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a text mdef from a file (creating an in-memory binary mdef). <br/></td></tr>
 <tr class="separator:a00dab94d45d1adc5f7778fd1e2398031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982b8e598afed47805fab1509e8fc4bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a982b8e598afed47805fab1509e8fc4bb"></a>
@@ -397,7 +397,7 @@ struct <a class="el" href="structmdef__entry__s.html">mdef_entry_s</a>&#160;</td
 
 <p>Definition at line <a class="el" href="bin__mdef_8c_source.html#l00714">714</a> of file <a class="el" href="bin__mdef_8c_source.html">bin_mdef.c</a>.</p>
 
-<p>References <a class="el" href="bin__mdef_8h_source.html#l00134">bin_mdef_s::ciname</a>, and <a class="el" href="bin__mdef_8h_source.html#l00122">bin_mdef_s::n_ciphone</a>.</p>
+<p>References <a class="el" href="bin__mdef_8h_source.html#l00134">bin_mdef_s::ciname</a>, <a class="el" href="bin__mdef_8h_source.html#l00122">bin_mdef_s::n_ciphone</a>, and <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/case_8h.html#ad276a997bd6709d986aa6e1e4e06c210">strcmp_nocase()</a>.</p>
 
 </div>
 </div>
@@ -496,7 +496,7 @@ struct <a class="el" href="structmdef__entry__s.html">mdef_entry_s</a>&#160;</td
 
 <p>Definition at line <a class="el" href="bin__mdef_8c_source.html#l00745">745</a> of file <a class="el" href="bin__mdef_8c_source.html">bin_mdef.c</a>.</p>
 
-<p>References <a class="el" href="bin__mdef_8h_source.html#l00135">bin_mdef_s::cd_tree</a>, <a class="el" href="structmdef__entry__s.html#a24e5db7af5e705b310e82154055043ec">mdef_entry_s::ci</a>, <a class="el" href="bin__mdef_8h_source.html#l00134">bin_mdef_s::ciname</a>, <a class="el" href="bin__mdef_8h_source.html#l00108">cd_tree_s::ctx</a>, <a class="el" href="bin__mdef_8h_source.html#l00112">cd_tree_s::down</a>, <a class="el" href="bin__mdef_8h_source.html#l00109">cd_tree_s::n_down</a>, <a class="el" href="mdef_8h_source.html#l00082">N_WORD_POSN</a>, <a class="el" href="bin__mdef_8h_source.html#l00136">bin_mdef_s::phone</a>, <a class="el" href="bin__mdef_8h_source.html#l00111">cd_tree_s::pid</a>, and <a class="el" href="bin__mdef_8h_source.html#l00131">bin_mdef_s::sil</a>.</p>
+<p>References <a class="el" href="bin__mdef_8h_source.html#l00135">bin_mdef_s::cd_tree</a>, <a class="el" href="structmdef__entry__s.html#a24e5db7af5e705b310e82154055043ec">mdef_entry_s::ci</a>, <a class="el" href="bin__mdef_8h_source.html#l00134">bin_mdef_s::ciname</a>, <a class="el" href="bin__mdef_8h_source.html#l00108">cd_tree_s::ctx</a>, <a class="el" href="bin__mdef_8h_source.html#l00112">cd_tree_s::down</a>, <a class="elRef" doxygen="/home/sagun/GITHUB/hack-the-talk-exotel/voice_recog/sphinxbase/doc/doxytags:../sphinxbase/" href="../sphinxbase/err_8h.html#ac3c705943d946708cea0a1443be1c853">E_INFO</a>, <a class="el" href="bin__mdef_8h_source.html#l00109">cd_tree_s::n_down</a>, <a class="el" href="mdef_8h_source.html#l00082">N_WORD_POSN</a>, <a class="el" href="bin__mdef_8h_source.html#l00136">bin_mdef_s::phone</a>, <a class="el" href="bin__mdef_8h_source.html#l00111">cd_tree_s::pid</a>, and <a class="el" href="bin__mdef_8h_source.html#l00131">bin_mdef_s::sil</a>.</p>
 
 </div>
 </div>
@@ -552,7 +552,7 @@ struct <a class="el" href="structmdef__entry__s.html">mdef_entry_s</a>&#160;</td
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_8d034a1e03e98d9b7ac467250bbebdea.html">libpocketsphinx</a></li><li class="navelem"><a class="el" href="bin__mdef_8h.html">bin_mdef.h</a></li>
-    <li class="footer">Generated on Tue Oct 6 2015 20:07:34 for PocketSphinx by
+    <li class="footer">Generated on Tue Oct 6 2015 21:10:59 for PocketSphinx by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

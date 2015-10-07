@@ -53,7 +53,7 @@ int {\bf ps\-\_\-lattice\-\_\-n\-\_\-frames} ({\bf ps\-\_\-lattice\-\_\-t} $\ast
 \begin{DoxyCompactList}\small\item\em Retain a lattice. \end{DoxyCompactList}\item 
 int {\bf ps\-\_\-lattice\-\_\-free} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag)
 \begin{DoxyCompactList}\small\item\em Free a lattice. \end{DoxyCompactList}\item 
-logmath\-\_\-t $\ast$ {\bf ps\-\_\-lattice\-\_\-get\-\_\-logmath} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag)
+{\bf logmath\-\_\-t} $\ast$ {\bf ps\-\_\-lattice\-\_\-get\-\_\-logmath} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag)
 \begin{DoxyCompactList}\small\item\em Get the log-\/math computation object for this lattice. \end{DoxyCompactList}\item 
 {\bf ps\-\_\-latnode\-\_\-iter\-\_\-t} $\ast$ {\bf ps\-\_\-latnode\-\_\-iter} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag)
 \begin{DoxyCompactList}\small\item\em Start iterating over nodes in the lattice. \end{DoxyCompactList}\item 
@@ -121,13 +121,13 @@ void {\bf ps\-\_\-lattice\-\_\-delq} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag)\la
 \begin{DoxyCompactList}\small\item\em Start a reverse traversal of edges in a word graph. \end{DoxyCompactList}\item 
 {\bf ps\-\_\-latlink\-\_\-t} $\ast$ {\bf ps\-\_\-lattice\-\_\-reverse\-\_\-next} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, {\bf ps\-\_\-latnode\-\_\-t} $\ast$start)
 \begin{DoxyCompactList}\small\item\em Get the next link in reverse traversal. \end{DoxyCompactList}\item 
-{\bf ps\-\_\-latlink\-\_\-t} $\ast$ {\bf ps\-\_\-lattice\-\_\-bestpath} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, ngram\-\_\-model\-\_\-t $\ast$lmset, float32 lwf, float32 ascale)
+{\bf ps\-\_\-latlink\-\_\-t} $\ast$ {\bf ps\-\_\-lattice\-\_\-bestpath} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, {\bf ngram\-\_\-model\-\_\-t} $\ast$lmset, float32 lwf, float32 ascale)
 \begin{DoxyCompactList}\small\item\em Do N-\/\-Gram based best-\/path search on a word graph. \end{DoxyCompactList}\item 
-int32 {\bf ps\-\_\-lattice\-\_\-posterior} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, ngram\-\_\-model\-\_\-t $\ast$lmset, float32 ascale)
+int32 {\bf ps\-\_\-lattice\-\_\-posterior} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, {\bf ngram\-\_\-model\-\_\-t} $\ast$lmset, float32 ascale)
 \begin{DoxyCompactList}\small\item\em Calculate link posterior probabilities on a word graph. \end{DoxyCompactList}\item 
 int32 {\bf ps\-\_\-lattice\-\_\-posterior\-\_\-prune} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, int32 beam)
 \begin{DoxyCompactList}\small\item\em Prune all links (and associated nodes) below a certain posterior probability. \end{DoxyCompactList}\item 
-{\bf ps\-\_\-astar\-\_\-t} $\ast$ {\bf ps\-\_\-astar\-\_\-start} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, ngram\-\_\-model\-\_\-t $\ast$lmset, float32 lwf, int sf, int ef, int w1, int w2)
+{\bf ps\-\_\-astar\-\_\-t} $\ast$ {\bf ps\-\_\-astar\-\_\-start} ({\bf ps\-\_\-lattice\-\_\-t} $\ast$dag, {\bf ngram\-\_\-model\-\_\-t} $\ast$lmset, float32 lwf, int sf, int ef, int w1, int w2)
 \begin{DoxyCompactList}\small\item\em Begin N-\/\-Gram based A$\ast$ search on a word graph. \end{DoxyCompactList}\item 
 {\bf ps\-\_\-latpath\-\_\-t} $\ast$ {\bf ps\-\_\-astar\-\_\-next} ({\bf ps\-\_\-astar\-\_\-t} $\ast$nbest)
 \begin{DoxyCompactList}\small\item\em Find next best hypothesis of A$\ast$ on a word graph. \end{DoxyCompactList}\item 
@@ -181,7 +181,7 @@ Referenced by ps\-\_\-nbest\-\_\-next().
 \subsubsection[{ps\-\_\-astar\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ps\-\_\-astar\-\_\-t}$\ast$ ps\-\_\-astar\-\_\-start (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-lattice\-\_\-t} $\ast$}]{dag, }
-\item[{ngram\-\_\-model\-\_\-t $\ast$}]{lmset, }
+\item[{{\bf ngram\-\_\-model\-\_\-t} $\ast$}]{lmset, }
 \item[{float32}]{lwf, }
 \item[{int}]{sf, }
 \item[{int}]{ef, }
@@ -213,7 +213,7 @@ Definition at line 1665 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latnode\-\_\-s\-::basewid, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-astar\-\_\-s\-::latpath\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-latpath\-\_\-s\-::node, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-latpath\-\_\-s\-::parent, ps\-\_\-latnode\-\_\-s\-::rem\-\_\-score, ps\-\_\-latpath\-\_\-s\-::score, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
+References ps\-\_\-latnode\-\_\-s\-::basewid, ckd\-\_\-calloc, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-astar\-\_\-s\-::latpath\-\_\-alloc, listelem\-\_\-alloc\-\_\-init(), listelem\-\_\-malloc, ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ngram\-\_\-bg\-\_\-score(), ngram\-\_\-tg\-\_\-score(), ps\-\_\-latpath\-\_\-s\-::node, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-latpath\-\_\-s\-::parent, ps\-\_\-latnode\-\_\-s\-::rem\-\_\-score, ps\-\_\-latpath\-\_\-s\-::score, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
 
 
 
@@ -633,7 +633,7 @@ Definition at line 755 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::beta, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::lmath, and ps\-\_\-lattice\-\_\-s\-::norm.
+References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::beta, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::lmath, logmath\-\_\-get\-\_\-zero(), and ps\-\_\-lattice\-\_\-s\-::norm.
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-latnode\-\_\-times@{ps\-\_\-latnode\-\_\-times}}
 \index{ps\-\_\-latnode\-\_\-times@{ps\-\_\-latnode\-\_\-times}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
@@ -703,7 +703,7 @@ References ps\-\_\-lattice\-\_\-s\-::dict, and ps\-\_\-latnode\-\_\-s\-::wid.
 \subsubsection[{ps\-\_\-lattice\-\_\-bestpath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ps\-\_\-latlink\-\_\-t}$\ast$ ps\-\_\-lattice\-\_\-bestpath (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-lattice\-\_\-t} $\ast$}]{dag, }
-\item[{ngram\-\_\-model\-\_\-t $\ast$}]{lmset, }
+\item[{{\bf ngram\-\_\-model\-\_\-t} $\ast$}]{lmset, }
 \item[{float32}]{lwf, }
 \item[{float32}]{ascale}
 \end{DoxyParamCaption}
@@ -723,7 +723,7 @@ Definition at line 1238 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::ascr, ps\-\_\-latnode\-\_\-s\-::basewid, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, ps\-\_\-search\-\_\-s\-::dict, dict\-\_\-filler\-\_\-word(), ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::entries, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::final\-\_\-node\-\_\-ascr, ps\-\_\-latlink\-\_\-s\-::from, ps\-\_\-latnode\-\_\-s\-::lef, ps\-\_\-lattice\-\_\-s\-::lmath, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-latlink\-\_\-s\-::path\-\_\-scr, ps\-\_\-lattice\-\_\-traverse\-\_\-edges(), ps\-\_\-lattice\-\_\-traverse\-\_\-next(), ps\-\_\-lattice\-\_\-s\-::search, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latlink\-\_\-s\-::to, and ps\-\_\-latnode\-\_\-s\-::wid.
+References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::ascr, ps\-\_\-latnode\-\_\-s\-::basewid, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, ps\-\_\-search\-\_\-s\-::dict, dict\-\_\-filler\-\_\-word(), E\-\_\-\-I\-N\-F\-O, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::entries, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::final\-\_\-node\-\_\-ascr, ps\-\_\-latlink\-\_\-s\-::from, ps\-\_\-latnode\-\_\-s\-::lef, ps\-\_\-lattice\-\_\-s\-::lmath, logmath\-\_\-add(), logmath\-\_\-get\-\_\-zero(), ps\-\_\-latnode\-\_\-s\-::next, ngram\-\_\-bg\-\_\-score(), ngram\-\_\-ng\-\_\-prob(), ngram\-\_\-tg\-\_\-score(), ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-latlink\-\_\-s\-::path\-\_\-scr, ps\-\_\-lattice\-\_\-traverse\-\_\-edges(), ps\-\_\-lattice\-\_\-traverse\-\_\-next(), ps\-\_\-lattice\-\_\-s\-::search, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latlink\-\_\-s\-::to, and ps\-\_\-latnode\-\_\-s\-::wid.
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-lattice\-\_\-free@{ps\-\_\-lattice\-\_\-free}}
 \index{ps\-\_\-lattice\-\_\-free@{ps\-\_\-lattice\-\_\-free}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
@@ -745,7 +745,7 @@ Definition at line 688 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-lattice\-\_\-s\-::dict, dict\-\_\-free(), ps\-\_\-lattice\-\_\-s\-::hyp\-\_\-str, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-list\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latnode\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::lmath, and ps\-\_\-lattice\-\_\-s\-::refcount.
+References ckd\-\_\-free(), ps\-\_\-lattice\-\_\-s\-::dict, dict\-\_\-free(), ps\-\_\-lattice\-\_\-s\-::hyp\-\_\-str, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-list\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latnode\-\_\-alloc, listelem\-\_\-alloc\-\_\-free(), ps\-\_\-lattice\-\_\-s\-::lmath, logmath\-\_\-free(), and ps\-\_\-lattice\-\_\-s\-::refcount.
 
 
 
@@ -753,7 +753,7 @@ Referenced by ngram\-\_\-search\-\_\-lattice(), ps\-\_\-search\-\_\-deinit(), an
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-lattice\-\_\-get\-\_\-logmath@{ps\-\_\-lattice\-\_\-get\-\_\-logmath}}
 \index{ps\-\_\-lattice\-\_\-get\-\_\-logmath@{ps\-\_\-lattice\-\_\-get\-\_\-logmath}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
-\subsubsection[{ps\-\_\-lattice\-\_\-get\-\_\-logmath}]{\setlength{\rightskip}{0pt plus 5cm}logmath\-\_\-t$\ast$ ps\-\_\-lattice\-\_\-get\-\_\-logmath (
+\subsubsection[{ps\-\_\-lattice\-\_\-get\-\_\-logmath}]{\setlength{\rightskip}{0pt plus 5cm}{\bf logmath\-\_\-t}$\ast$ ps\-\_\-lattice\-\_\-get\-\_\-logmath (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-lattice\-\_\-t} $\ast$}]{dag}
 \end{DoxyParamCaption}
@@ -763,7 +763,7 @@ Referenced by ngram\-\_\-search\-\_\-lattice(), ps\-\_\-search\-\_\-deinit(), an
 Get the log-\/math computation object for this lattice. 
 
 \begin{DoxyReturn}{Returns}
-The log-\/math object for this lattice. The lattice retains ownership of this pointer, so you should not attempt to free it manually. Use logmath\-\_\-retain() if you wish to reuse it elsewhere. 
+The log-\/math object for this lattice. The lattice retains ownership of this pointer, so you should not attempt to free it manually. Use {\bf logmath\-\_\-retain()} if you wish to reuse it elsewhere. 
 \end{DoxyReturn}
 
 
@@ -805,7 +805,7 @@ References ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames.
 \subsubsection[{ps\-\_\-lattice\-\_\-posterior}]{\setlength{\rightskip}{0pt plus 5cm}int32 ps\-\_\-lattice\-\_\-posterior (
 \begin{DoxyParamCaption}
 \item[{{\bf ps\-\_\-lattice\-\_\-t} $\ast$}]{dag, }
-\item[{ngram\-\_\-model\-\_\-t $\ast$}]{lmset, }
+\item[{{\bf ngram\-\_\-model\-\_\-t} $\ast$}]{lmset, }
 \item[{float32}]{ascale}
 \end{DoxyParamCaption}
 )}\label{ps__lattice_8c_aafee8a8325301db72711a3680bc385c6}
@@ -824,7 +824,7 @@ Definition at line 1408 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latlink\-\_\-s\-::ascr, ps\-\_\-latnode\-\_\-s\-::basewid, ps\-\_\-latlink\-\_\-s\-::beta, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, dict\-\_\-filler\-\_\-word(), ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::final\-\_\-node\-\_\-ascr, ps\-\_\-latlink\-\_\-s\-::from, ps\-\_\-lattice\-\_\-s\-::lmath, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-latlink\-\_\-s\-::path\-\_\-scr, ps\-\_\-lattice\-\_\-reverse\-\_\-edges(), ps\-\_\-lattice\-\_\-reverse\-\_\-next(), ps\-\_\-lattice\-\_\-s\-::search, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-lattice\-\_\-s\-::start, and ps\-\_\-latlink\-\_\-s\-::to.
+References ps\-\_\-latlink\-\_\-s\-::ascr, ps\-\_\-latnode\-\_\-s\-::basewid, ps\-\_\-latlink\-\_\-s\-::beta, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, dict\-\_\-filler\-\_\-word(), ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::final\-\_\-node\-\_\-ascr, ps\-\_\-latlink\-\_\-s\-::from, ps\-\_\-lattice\-\_\-s\-::lmath, logmath\-\_\-add(), logmath\-\_\-get\-\_\-zero(), ps\-\_\-latnode\-\_\-s\-::next, ngram\-\_\-ng\-\_\-prob(), ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-latlink\-\_\-s\-::path\-\_\-scr, ps\-\_\-lattice\-\_\-reverse\-\_\-edges(), ps\-\_\-lattice\-\_\-reverse\-\_\-next(), ps\-\_\-lattice\-\_\-s\-::search, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-lattice\-\_\-s\-::start, and ps\-\_\-latlink\-\_\-s\-::to.
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-lattice\-\_\-posterior\-\_\-prune@{ps\-\_\-lattice\-\_\-posterior\-\_\-prune}}
 \index{ps\-\_\-lattice\-\_\-posterior\-\_\-prune@{ps\-\_\-lattice\-\_\-posterior\-\_\-prune}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
@@ -854,7 +854,7 @@ Definition at line 1477 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::beta, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::entries, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-latlink\-\_\-s\-::from, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-list\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-lattice\-\_\-delete\-\_\-unreachable(), ps\-\_\-lattice\-\_\-traverse\-\_\-edges(), ps\-\_\-lattice\-\_\-traverse\-\_\-next(), ps\-\_\-latnode\-\_\-s\-::reachable, ps\-\_\-lattice\-\_\-s\-::start, and ps\-\_\-latlink\-\_\-s\-::to.
+References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::beta, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::entries, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-latlink\-\_\-s\-::from, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-list\-\_\-alloc, listelem\-\_\-free, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-lattice\-\_\-delete\-\_\-unreachable(), ps\-\_\-lattice\-\_\-traverse\-\_\-edges(), ps\-\_\-lattice\-\_\-traverse\-\_\-next(), ps\-\_\-latnode\-\_\-s\-::reachable, ps\-\_\-lattice\-\_\-s\-::start, and ps\-\_\-latlink\-\_\-s\-::to.
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-lattice\-\_\-read@{ps\-\_\-lattice\-\_\-read}}
 \index{ps\-\_\-lattice\-\_\-read@{ps\-\_\-lattice\-\_\-read}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
@@ -884,7 +884,7 @@ Definition at line 410 of file ps\-\_\-lattice.\-c.
 
 
 
-References B\-A\-D\-\_\-\-S3\-W\-I\-D, ps\-\_\-latnode\-\_\-s\-::basewid, ps\-\_\-search\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-lattice\-\_\-s\-::dict, ps\-\_\-decoder\-\_\-s\-::dict, dict\-\_\-add\-\_\-word(), dict\-\_\-filler\-\_\-word(), dict\-\_\-init(), dict\-\_\-retain(), dict\-\_\-word2basestr(), dict\-\_\-wordid(), ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::entries, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-latnode\-\_\-s\-::fef, ps\-\_\-lattice\-\_\-s\-::frate, ps\-\_\-latnode\-\_\-s\-::id, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-list\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latnode\-\_\-alloc, ps\-\_\-latnode\-\_\-s\-::lef, ps\-\_\-lattice\-\_\-s\-::lmath, ps\-\_\-decoder\-\_\-s\-::lmath, ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-bypass\-\_\-fillers(), ps\-\_\-lattice\-\_\-delete\-\_\-unreachable(), ps\-\_\-lattice\-\_\-link(), ps\-\_\-latnode\-\_\-s\-::reachable, ps\-\_\-lattice\-\_\-s\-::refcount, ps\-\_\-lattice\-\_\-s\-::search, ps\-\_\-decoder\-\_\-s\-::search, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::silence, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latnode\-\_\-s\-::wid, W\-O\-R\-S\-E\-\_\-\-T\-H\-A\-N, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
+References B\-A\-D\-\_\-\-S3\-W\-I\-D, ps\-\_\-latnode\-\_\-s\-::basewid, ckd\-\_\-calloc, ckd\-\_\-free(), ckd\-\_\-salloc, ps\-\_\-search\-\_\-s\-::config, ps\-\_\-decoder\-\_\-s\-::config, ps\-\_\-lattice\-\_\-s\-::dict, ps\-\_\-decoder\-\_\-s\-::dict, dict\-\_\-add\-\_\-word(), dict\-\_\-filler\-\_\-word(), dict\-\_\-init(), dict\-\_\-retain(), dict\-\_\-word2basestr(), dict\-\_\-wordid(), E\-\_\-\-E\-R\-R\-O\-R, E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-Y\-S\-T\-E\-M, E\-\_\-\-I\-N\-F\-O, E\-\_\-\-W\-A\-R\-N, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::entries, ps\-\_\-latnode\-\_\-s\-::exits, fclose\-\_\-comp(), ps\-\_\-latnode\-\_\-s\-::fef, fopen\-\_\-compchk(), ps\-\_\-lattice\-\_\-s\-::frate, ps\-\_\-latnode\-\_\-s\-::id, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latlink\-\_\-list\-\_\-alloc, ps\-\_\-lattice\-\_\-s\-::latnode\-\_\-alloc, ps\-\_\-latnode\-\_\-s\-::lef, lineiter\-\_\-free(), lineiter\-\_\-next(), lineiter\-\_\-start(), listelem\-\_\-alloc\-\_\-init(), listelem\-\_\-malloc, ps\-\_\-lattice\-\_\-s\-::lmath, ps\-\_\-decoder\-\_\-s\-::lmath, logmath\-\_\-get\-\_\-base(), logmath\-\_\-init(), logmath\-\_\-log(), logmath\-\_\-retain(), ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-bypass\-\_\-fillers(), ps\-\_\-lattice\-\_\-delete\-\_\-unreachable(), ps\-\_\-lattice\-\_\-link(), ps\-\_\-latnode\-\_\-s\-::reachable, ps\-\_\-lattice\-\_\-s\-::refcount, ps\-\_\-lattice\-\_\-s\-::search, ps\-\_\-decoder\-\_\-s\-::search, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::silence, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latnode\-\_\-s\-::wid, W\-O\-R\-S\-E\-\_\-\-T\-H\-A\-N, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-lattice\-\_\-retain@{ps\-\_\-lattice\-\_\-retain}}
 \index{ps\-\_\-lattice\-\_\-retain@{ps\-\_\-lattice\-\_\-retain}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
@@ -1079,7 +1079,7 @@ Definition at line 233 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latlink\-\_\-s\-::ascr, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, ps\-\_\-lattice\-\_\-s\-::dict, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-latnode\-\_\-s\-::fef, ps\-\_\-latnode\-\_\-s\-::id, ps\-\_\-latnode\-\_\-s\-::lef, ps\-\_\-lattice\-\_\-s\-::lmath, ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-latnode\-\_\-s\-::node\-\_\-id, ps\-\_\-lattice\-\_\-s\-::nodes, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latlink\-\_\-s\-::to, ps\-\_\-latnode\-\_\-s\-::wid, W\-O\-R\-S\-E\-\_\-\-T\-H\-A\-N, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
+References ps\-\_\-latlink\-\_\-s\-::ascr, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, ps\-\_\-lattice\-\_\-s\-::dict, E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-Y\-S\-T\-E\-M, E\-\_\-\-I\-N\-F\-O, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-latnode\-\_\-s\-::fef, ps\-\_\-latnode\-\_\-s\-::id, ps\-\_\-latnode\-\_\-s\-::lef, ps\-\_\-lattice\-\_\-s\-::lmath, logmath\-\_\-get\-\_\-base(), ps\-\_\-lattice\-\_\-s\-::n\-\_\-frames, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-latnode\-\_\-s\-::node\-\_\-id, ps\-\_\-lattice\-\_\-s\-::nodes, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latlink\-\_\-s\-::to, ps\-\_\-latnode\-\_\-s\-::wid, W\-O\-R\-S\-E\-\_\-\-T\-H\-A\-N, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
 
 \index{ps\-\_\-lattice.\-c@{ps\-\_\-lattice.\-c}!ps\-\_\-lattice\-\_\-write\-\_\-htk@{ps\-\_\-lattice\-\_\-write\-\_\-htk}}
 \index{ps\-\_\-lattice\-\_\-write\-\_\-htk@{ps\-\_\-lattice\-\_\-write\-\_\-htk}!ps_lattice.c@{ps\-\_\-lattice.\-c}}
@@ -1102,5 +1102,5 @@ Definition at line 293 of file ps\-\_\-lattice.\-c.
 
 
 
-References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::ascr, ps\-\_\-latlink\-\_\-s\-::beta, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, ps\-\_\-lattice\-\_\-s\-::dict, dict\-\_\-filler\-\_\-word(), ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::frate, ps\-\_\-latnode\-\_\-s\-::id, ps\-\_\-lattice\-\_\-s\-::lmath, ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-latnode\-\_\-s\-::reachable, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latlink\-\_\-s\-::to, ps\-\_\-latnode\-\_\-s\-::wid, W\-O\-R\-S\-E\-\_\-\-T\-H\-A\-N, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
+References ps\-\_\-latlink\-\_\-s\-::alpha, ps\-\_\-latlink\-\_\-s\-::ascr, ps\-\_\-latlink\-\_\-s\-::beta, B\-E\-T\-T\-E\-R\-\_\-\-T\-H\-A\-N, ps\-\_\-lattice\-\_\-s\-::dict, dict\-\_\-filler\-\_\-word(), E\-\_\-\-E\-R\-R\-O\-R\-\_\-\-S\-Y\-S\-T\-E\-M, E\-\_\-\-I\-N\-F\-O, ps\-\_\-lattice\-\_\-s\-::end, ps\-\_\-latnode\-\_\-s\-::exits, ps\-\_\-lattice\-\_\-s\-::frate, ps\-\_\-latnode\-\_\-s\-::id, ps\-\_\-lattice\-\_\-s\-::lmath, logmath\-\_\-exp(), logmath\-\_\-log\-\_\-to\-\_\-ln(), ps\-\_\-latnode\-\_\-s\-::next, ps\-\_\-lattice\-\_\-s\-::nodes, ps\-\_\-lattice\-\_\-s\-::norm, ps\-\_\-latnode\-\_\-s\-::reachable, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, ps\-\_\-latnode\-\_\-s\-::sf, ps\-\_\-lattice\-\_\-s\-::start, ps\-\_\-latlink\-\_\-s\-::to, ps\-\_\-latnode\-\_\-s\-::wid, W\-O\-R\-S\-E\-\_\-\-T\-H\-A\-N, and W\-O\-R\-S\-T\-\_\-\-S\-C\-O\-R\-E.
 

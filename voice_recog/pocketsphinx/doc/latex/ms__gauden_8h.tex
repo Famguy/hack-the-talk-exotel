@@ -21,11 +21,11 @@ struct {\bf gauden\-\_\-t}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf gauden\-\_\-t} $\ast$ {\bf gauden\-\_\-init} (char const $\ast$meanfile, char const $\ast$varfile, float32 varfloor, logmath\-\_\-t $\ast$lmath)
+{\bf gauden\-\_\-t} $\ast$ {\bf gauden\-\_\-init} (char const $\ast$meanfile, char const $\ast$varfile, float32 varfloor, {\bf logmath\-\_\-t} $\ast$lmath)
 \begin{DoxyCompactList}\small\item\em Read mixture gaussian codebooks from the given files. \end{DoxyCompactList}\item 
 void {\bf gauden\-\_\-free} ({\bf gauden\-\_\-t} $\ast$g)
 \begin{DoxyCompactList}\small\item\em Release memory allocated by gauden\-\_\-init. \end{DoxyCompactList}\item 
-int32 {\bf gauden\-\_\-mllr\-\_\-transform} ({\bf gauden\-\_\-t} $\ast$s, {\bf ps\-\_\-mllr\-\_\-t} $\ast$mllr, cmd\-\_\-ln\-\_\-t $\ast$config)
+int32 {\bf gauden\-\_\-mllr\-\_\-transform} ({\bf gauden\-\_\-t} $\ast$s, {\bf ps\-\_\-mllr\-\_\-t} $\ast$mllr, {\bf cmd\-\_\-ln\-\_\-t} $\ast$config)
 \begin{DoxyCompactList}\small\item\em Transform Gaussians according to an M\-L\-L\-R matrix (or, eventually, more). \end{DoxyCompactList}\item 
 int32 {\bf gauden\-\_\-dist} ({\bf gauden\-\_\-t} $\ast$g, int mgau, int n\-\_\-top, mfcc\-\_\-t $\ast$$\ast$obs, {\bf gauden\-\_\-dist\-\_\-t} $\ast$$\ast$out\-\_\-dist)
 \begin{DoxyCompactList}\small\item\em Compute gaussian density values for the given input observation vector wrt the specified mixture gaussian codebook (which may consist of several feature streams). \end{DoxyCompactList}\item 
@@ -123,7 +123,7 @@ Definition at line 148 of file ms\-\_\-gauden.\-c.
 
 
 
-References gauden\-\_\-t\-::det, gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::mean, gauden\-\_\-t\-::n\-\_\-density, gauden\-\_\-t\-::n\-\_\-feat, and gauden\-\_\-t\-::var.
+References gauden\-\_\-t\-::det, E\-\_\-\-I\-N\-F\-O, gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::mean, gauden\-\_\-t\-::n\-\_\-density, gauden\-\_\-t\-::n\-\_\-feat, and gauden\-\_\-t\-::var.
 
 
 
@@ -146,7 +146,7 @@ Definition at line 399 of file ms\-\_\-gauden.\-c.
 
 
 
-References gauden\-\_\-t\-::det, gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::mean, and gauden\-\_\-t\-::var.
+References ckd\-\_\-free(), ckd\-\_\-free\-\_\-3d(), gauden\-\_\-t\-::det, gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::mean, and gauden\-\_\-t\-::var.
 
 \index{ms\-\_\-gauden.\-h@{ms\-\_\-gauden.\-h}!gauden\-\_\-init@{gauden\-\_\-init}}
 \index{gauden\-\_\-init@{gauden\-\_\-init}!ms_gauden.h@{ms\-\_\-gauden.\-h}}
@@ -155,7 +155,7 @@ References gauden\-\_\-t\-::det, gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::mean
 \item[{char const $\ast$}]{meanfile, }
 \item[{char const $\ast$}]{varfile, }
 \item[{float32}]{varfloor, }
-\item[{logmath\-\_\-t $\ast$}]{lmath}
+\item[{{\bf logmath\-\_\-t} $\ast$}]{lmath}
 \end{DoxyParamCaption}
 )}\label{ms__gauden_8h_ae4587b0aeb39fd926622a422969ecebc}
 
@@ -177,7 +177,7 @@ Definition at line 361 of file ms\-\_\-gauden.\-c.
 
 
 
-References gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::lmath, gauden\-\_\-t\-::mean, gauden\-\_\-t\-::n\-\_\-density, gauden\-\_\-t\-::n\-\_\-feat, gauden\-\_\-t\-::n\-\_\-mgau, and gauden\-\_\-t\-::var.
+References ckd\-\_\-calloc, ckd\-\_\-free(), E\-\_\-\-F\-A\-T\-A\-L, gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::lmath, gauden\-\_\-t\-::mean, gauden\-\_\-t\-::n\-\_\-density, gauden\-\_\-t\-::n\-\_\-feat, gauden\-\_\-t\-::n\-\_\-mgau, and gauden\-\_\-t\-::var.
 
 \index{ms\-\_\-gauden.\-h@{ms\-\_\-gauden.\-h}!gauden\-\_\-mllr\-\_\-transform@{gauden\-\_\-mllr\-\_\-transform}}
 \index{gauden\-\_\-mllr\-\_\-transform@{gauden\-\_\-mllr\-\_\-transform}!ms_gauden.h@{ms\-\_\-gauden.\-h}}
@@ -185,7 +185,7 @@ References gauden\-\_\-t\-::featlen, gauden\-\_\-t\-::lmath, gauden\-\_\-t\-::me
 \begin{DoxyParamCaption}
 \item[{{\bf gauden\-\_\-t} $\ast$}]{s, }
 \item[{{\bf ps\-\_\-mllr\-\_\-t} $\ast$}]{mllr, }
-\item[{cmd\-\_\-ln\-\_\-t $\ast$}]{config}
+\item[{{\bf cmd\-\_\-ln\-\_\-t} $\ast$}]{config}
 \end{DoxyParamCaption}
 )}\label{ms__gauden_8h_ab640722f2c2b1e8bc6e883d9b5b72494}
 
@@ -198,5 +198,5 @@ Definition at line 550 of file ms\-\_\-gauden.\-c.
 
 
 
-References ps\-\_\-mllr\-\_\-s\-::\-A, ps\-\_\-mllr\-\_\-s\-::b, gauden\-\_\-t\-::det, gauden\-\_\-t\-::featlen, ps\-\_\-mllr\-\_\-s\-::h, gauden\-\_\-t\-::lmath, gauden\-\_\-t\-::mean, gauden\-\_\-t\-::n\-\_\-density, gauden\-\_\-t\-::n\-\_\-feat, gauden\-\_\-t\-::n\-\_\-mgau, and gauden\-\_\-t\-::var.
+References ps\-\_\-mllr\-\_\-s\-::\-A, ps\-\_\-mllr\-\_\-s\-::b, ckd\-\_\-calloc, ckd\-\_\-free(), ckd\-\_\-free\-\_\-3d(), cmd\-\_\-ln\-\_\-str\-\_\-r(), gauden\-\_\-t\-::det, E\-\_\-\-F\-A\-T\-A\-L, gauden\-\_\-t\-::featlen, ps\-\_\-mllr\-\_\-s\-::h, gauden\-\_\-t\-::lmath, gauden\-\_\-t\-::mean, gauden\-\_\-t\-::n\-\_\-density, gauden\-\_\-t\-::n\-\_\-feat, gauden\-\_\-t\-::n\-\_\-mgau, and gauden\-\_\-t\-::var.
 

@@ -15,7 +15,7 @@ N-\/\-Gram search module structure.
 {\bf ps\-\_\-search\-\_\-t} {\bfseries base}\label{structngram__search__s_a572ad45de5b0f364096f0a8544fe5bf7}
 
 \item 
-ngram\-\_\-model\-\_\-t $\ast$ {\bf lmset}
+{\bf ngram\-\_\-model\-\_\-t} $\ast$ {\bf lmset}
 \begin{DoxyCompactList}\small\item\em Set of language models. \end{DoxyCompactList}\item 
 {\bf hmm\-\_\-context\-\_\-t} $\ast$ {\bf hmmctx}
 \begin{DoxyCompactList}\small\item\em H\-M\-M context. \end{DoxyCompactList}\item 
@@ -31,13 +31,13 @@ uint8 {\bfseries bestpath}\label{structngram__search__s_a0d1daeb151911b2243a1a91
 uint8 {\bfseries done}\label{structngram__search__s_a3c51a66cf26de3aa050b3615d14ff060}
 
 \item 
-listelem\-\_\-alloc\-\_\-t $\ast$ {\bf chan\-\_\-alloc}\label{structngram__search__s_abe9fe60f6e48b9a6e3d41856bb1dc109}
+{\bf listelem\-\_\-alloc\-\_\-t} $\ast$ {\bf chan\-\_\-alloc}\label{structngram__search__s_abe9fe60f6e48b9a6e3d41856bb1dc109}
 
 \begin{DoxyCompactList}\small\item\em For chan\-\_\-t. \end{DoxyCompactList}\item 
-listelem\-\_\-alloc\-\_\-t $\ast$ {\bf root\-\_\-chan\-\_\-alloc}\label{structngram__search__s_a576470858bfa44c671f0e677902ab424}
+{\bf listelem\-\_\-alloc\-\_\-t} $\ast$ {\bf root\-\_\-chan\-\_\-alloc}\label{structngram__search__s_a576470858bfa44c671f0e677902ab424}
 
 \begin{DoxyCompactList}\small\item\em For root\-\_\-chan\-\_\-t. \end{DoxyCompactList}\item 
-listelem\-\_\-alloc\-\_\-t $\ast$ {\bf latnode\-\_\-alloc}\label{structngram__search__s_a21600dc2e23744f0be9c64a4db8d7e50}
+{\bf listelem\-\_\-alloc\-\_\-t} $\ast$ {\bf latnode\-\_\-alloc}\label{structngram__search__s_a21600dc2e23744f0be9c64a4db8d7e50}
 
 \begin{DoxyCompactList}\small\item\em For latnode\-\_\-t. \end{DoxyCompactList}\item 
 {\bf root\-\_\-chan\-\_\-t} $\ast$ {\bf root\-\_\-chan}
@@ -164,13 +164,13 @@ float32 {\bf ascale}
 \begin{DoxyCompactList}\small\item\em Acoustic score scale for posterior probabilities. \end{DoxyCompactList}\item 
 {\bf ngram\-\_\-search\-\_\-stats\-\_\-t} {\bf st}
 \begin{DoxyCompactList}\small\item\em Various statistics for profiling. \end{DoxyCompactList}\item 
-ptmr\-\_\-t {\bfseries fwdtree\-\_\-perf}\label{structngram__search__s_af51ec91c4ea052252542a4ec395484d7}
+{\bf ptmr\-\_\-t} {\bfseries fwdtree\-\_\-perf}\label{structngram__search__s_af51ec91c4ea052252542a4ec395484d7}
 
 \item 
-ptmr\-\_\-t {\bfseries fwdflat\-\_\-perf}\label{structngram__search__s_a9af672c28dfc39bdfa5dd8e7e9e54989}
+{\bf ptmr\-\_\-t} {\bfseries fwdflat\-\_\-perf}\label{structngram__search__s_a9af672c28dfc39bdfa5dd8e7e9e54989}
 
 \item 
-ptmr\-\_\-t {\bfseries bestpath\-\_\-perf}\label{structngram__search__s_a67d755fd060de20d50c1a2d237618917}
+{\bf ptmr\-\_\-t} {\bfseries bestpath\-\_\-perf}\label{structngram__search__s_a67d755fd060de20d50c1a2d237618917}
 
 \item 
 int32 {\bfseries n\-\_\-tot\-\_\-frame}\label{structngram__search__s_a45baee2d3862a81cc21946a9602317be}
@@ -362,7 +362,7 @@ Definition at line 326 of file ngram\-\_\-search.\-h.
 
 \index{ngram\-\_\-search\-\_\-s@{ngram\-\_\-search\-\_\-s}!lmset@{lmset}}
 \index{lmset@{lmset}!ngram_search_s@{ngram\-\_\-search\-\_\-s}}
-\subsubsection[{lmset}]{\setlength{\rightskip}{0pt plus 5cm}ngram\-\_\-model\-\_\-t$\ast$ ngram\-\_\-search\-\_\-s\-::lmset}\label{structngram__search__s_a6127a6d8fb53832e67456c11aa6ad9c4}
+\subsubsection[{lmset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ngram\-\_\-model\-\_\-t}$\ast$ ngram\-\_\-search\-\_\-s\-::lmset}\label{structngram__search__s_a6127a6d8fb53832e67456c11aa6ad9c4}
 
 
 Set of language models. 

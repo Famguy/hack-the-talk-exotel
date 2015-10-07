@@ -15,7 +15,7 @@ struct {\bf tmat\-\_\-t}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-{\bf tmat\-\_\-t} $\ast$ {\bf tmat\-\_\-init} (char const $\ast$tmatfile, logmath\-\_\-t $\ast$lmath, float64 tpfloor, int32 breport)
+{\bf tmat\-\_\-t} $\ast$ {\bf tmat\-\_\-init} (char const $\ast$tmatfile, {\bf logmath\-\_\-t} $\ast$lmath, float64 tpfloor, int32 breport)
 \begin{DoxyCompactList}\small\item\em Initialize transition matrix. \end{DoxyCompactList}\item 
 void {\bf tmat\-\_\-dump} ({\bf tmat\-\_\-t} $\ast$tmat, F\-I\-L\-E $\ast$fp)
 \begin{DoxyCompactList}\small\item\em Dumping the transition matrix for debugging. \end{DoxyCompactList}\item 
@@ -82,7 +82,7 @@ Definition at line 332 of file tmat.\-c.
 
 
 
-References tmat\-\_\-t\-::tp.
+References ckd\-\_\-free(), ckd\-\_\-free\-\_\-3d(), and tmat\-\_\-t\-::tp.
 
 
 
@@ -93,7 +93,7 @@ Referenced by acmod\-\_\-free().
 \subsubsection[{tmat\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf tmat\-\_\-t}$\ast$ tmat\-\_\-init (
 \begin{DoxyParamCaption}
 \item[{char const $\ast$}]{tmatfile, }
-\item[{logmath\-\_\-t $\ast$}]{lmath, }
+\item[{{\bf logmath\-\_\-t} $\ast$}]{lmath, }
 \item[{float64}]{tpfloor, }
 \item[{int32}]{breport}
 \end{DoxyParamCaption}
@@ -119,7 +119,7 @@ Definition at line 191 of file tmat.\-c.
 
 
 
-References tmat\-\_\-t\-::n\-\_\-state, tmat\-\_\-t\-::n\-\_\-tmat, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, and tmat\-\_\-t\-::tp.
+References bio\-\_\-fread(), bio\-\_\-hdrarg\-\_\-free(), bio\-\_\-readhdr(), bio\-\_\-verify\-\_\-chksum(), ckd\-\_\-calloc, ckd\-\_\-calloc\-\_\-2d, ckd\-\_\-calloc\-\_\-3d, ckd\-\_\-free\-\_\-2d(), E\-\_\-\-E\-R\-R\-O\-R, E\-\_\-\-F\-A\-T\-A\-L, E\-\_\-\-F\-A\-T\-A\-L\-\_\-\-S\-Y\-S\-T\-E\-M, E\-\_\-\-I\-N\-F\-O, E\-\_\-\-W\-A\-R\-N, logmath\-\_\-log(), tmat\-\_\-t\-::n\-\_\-state, tmat\-\_\-t\-::n\-\_\-tmat, S\-E\-N\-S\-C\-R\-\_\-\-S\-H\-I\-F\-T, and tmat\-\_\-t\-::tp.
 
 \index{tmat.\-h@{tmat.\-h}!tmat\-\_\-report@{tmat\-\_\-report}}
 \index{tmat\-\_\-report@{tmat\-\_\-report}!tmat.h@{tmat.\-h}}
@@ -143,5 +143,5 @@ Definition at line 319 of file tmat.\-c.
 
 
 
-References tmat\-\_\-t\-::n\-\_\-state, and tmat\-\_\-t\-::n\-\_\-tmat.
+References E\-\_\-\-I\-N\-F\-O\-\_\-\-N\-O\-F\-N, tmat\-\_\-t\-::n\-\_\-state, and tmat\-\_\-t\-::n\-\_\-tmat.
 
